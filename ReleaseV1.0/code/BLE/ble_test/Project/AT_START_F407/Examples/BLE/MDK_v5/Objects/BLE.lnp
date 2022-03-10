@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\app.o"
+".\objects\bsp.o"
+".\objects\at32f4xx_it.o"
+"..\mg_BLEpair_lib_m3.lib"
+".\objects\retarget.o"
+".\objects\at32_board.o"
+".\objects\system_at32f4xx.o"
+".\objects\startup_at32f407vgt7.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_exti.o"
+".\objects\at32f4xx_iwdg.o"
+".\objects\at32f4xx_rcc.o"
+".\objects\at32f4xx_spi.o"
+".\objects\misc.o"
+".\objects\at32f4xx_usart.o"
+--library_type=microlib --strict --scatter ".\Objects\BLE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\BLE.map" -o .\Objects\BLE.axf

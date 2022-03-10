@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\at32_board.o"
+".\objects\at32f4xx_it.o"
+".\objects\at32f4xx_dma.o"
+".\objects\at32f4xx_dac.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_rcc.o"
+".\objects\at32f4xx_tim.o"
+".\objects\misc.o"
+".\objects\at32f4xx_usart.o"
+".\objects\system_at32f4xx.o"
+".\objects\startup_at32f407vgt7.o"
+--library_type=microlib --strict --scatter ".\Objects\sample8.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\sample8.map" -o .\Objects\sample8.axf

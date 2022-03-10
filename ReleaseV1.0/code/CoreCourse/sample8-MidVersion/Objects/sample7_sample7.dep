@@ -1,0 +1,392 @@
+Dependencies for Project 'sample7', Target 'sample7': (DO NOT MODIFY !)
+F (.\main.c)(0x5F490DB3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\AT32_Board\at32_board.c)(0x5E0330B2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32_board.o --omf_browse .\objects\at32_board.crf --depend .\objects\at32_board.d)
+I (AT32_Board\at32_board.h)(0x5E0330B2)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
+F (.\at32f4xx_it.c)(0x5DA43668)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_it.o --omf_browse .\objects\at32f4xx_it.crf --depend .\objects\at32f4xx_it.d)
+I (at32f4xx_it.h)(0x5DA43668)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dma.c)(0x5E033092)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_dma.o --omf_browse .\objects\at32f4xx_dma.crf --depend .\objects\at32f4xx_dma.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dac.c)(0x5E1D1E00)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_dac.o --omf_browse .\objects\at32f4xx_dac.crf --depend .\objects\at32f4xx_dac.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_gpio.c)(0x5E045200)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_gpio.o --omf_browse .\objects\at32f4xx_gpio.crf --depend .\objects\at32f4xx_gpio.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x588B8344)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rcc.c)(0x5F1E7292)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_rcc.o --omf_browse .\objects\at32f4xx_rcc.crf --depend .\objects\at32f4xx_rcc.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_tim.c)(0x5F48F4E7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_tim.o --omf_browse .\objects\at32f4xx_tim.crf --depend .\objects\at32f4xx_tim.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\misc.c)(0x5E033092)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+F (.\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_usart.c)(0x5E033092)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\at32f4xx_usart.o --omf_browse .\objects\at32f4xx_usart.crf --depend .\objects\at32f4xx_usart.d)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\system_at32f4xx.c)(0x5E3D0176)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\AT32F4xx_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM4\CoreSupport -I .\Libraries\CMSIS\CM4\DeviceSupport -I .\AT32_Board -I ..\sample7-学员中间版-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DAT32F407VGT7 -DAT32F407VGT7 -DLIBRARY_VERSION -DAT_START_F407_V1_0-o .\objects\system_at32f4xx.o --omf_browse .\objects\system_at32f4xx.crf --depend .\objects\system_at32f4xx.d)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx.h)(0x5E5DB532)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cm4.h)(0x5E033094)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmInstr.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\cmsis_armcc.h)(0x5E033092)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmFunc.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\CoreSupport\core_cmSimd.h)(0x5E033094)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\system_at32f4xx.h)(0x5E03309A)
+I (.\Libraries\CMSIS\CM4\DeviceSupport\at32f4xx_conf.h)(0x5E0D68A8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_acc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_adc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_bkp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_can.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_comp.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_crc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dac.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dbgmcu.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_dma.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_ertc.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_exti.h)(0x5E033090)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_flash.h)(0x5E1D1AE8)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_gpio.h)(0x5E045200)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_i2c.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_iwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_pwr.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rcc.h)(0x5E5DB500)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_rtc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_sdio.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_spi.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_tim.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_usart.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_wwdg.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\at32f4xx_xmc.h)(0x5E033092)
+I (.\Libraries\AT32F4xx_StdPeriph_Driver\inc\misc.h)(0x5E033092)
+F (.\Libraries\CMSIS\CM4\DeviceSupport\startup\mdk\startup_at32f407vgt7.s)(0x5F0C0AF7)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_sample7-IC:\Keil_v5\ARM\PACK\Keil\AT32F4xx_DFP\1.3.1\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "AT32F407VGT7 SETA 1"--list .\listings\startup_at32f407vgt7.lst --xref -o .\objects\startup_at32f407vgt7.o --depend .\objects\startup_at32f407vgt7.d)

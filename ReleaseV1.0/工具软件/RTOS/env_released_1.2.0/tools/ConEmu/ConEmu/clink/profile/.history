@@ -1,0 +1,220 @@
+menuconfig -s
+menuconfig -s
+menuconfig
+menuconfig -s
+cd ..
+menuconfig -s
+cd bsp
+cd at32\
+ls
+cd at32f407-start\
+menuconfig
+menuconfig
+menuconfig -s
+menuconfig -s
+pkgs --upgrade
+cd bsp\
+cd at32\
+ cd at32f407-start\
+ls
+scon
+scons
+menuconfig
+menuconfig -s
+menuconfig
+scons
+menuconfig
+cd at32f407-start\
+pkgs --update
+putty
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+scons
+cd at32f407-start\
+pkgs --update
+menuconfig
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+menuconfig
+menuconfig
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+putty
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+scons
+cd at32f407-start\
+pkgs --update
+menuconfig
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+version
+ver
+help
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+ls
+plink.exe -serial COM29 -sercfg 115200,8,n,1,N
+help
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+plink.exe -serial COM3 -sercfg 115200,8,n,1,N
+plink.exe -serial COM3 -sercfg 115200,8,n,1,N
+menuconfig
+plink.exe -serial COM3 -sercfg 115200,8,n,1,N
+plink.exe -serial COM3 -sercfg 115200,8,n,1,N
+menuconfig
+scons --dist
+gh repo clone RT-Thread/rt-thread
+git
+scons --target = mdk5
+scons --dist
+scons --target=mdk5
+scons --dist
+scons --target = mdk5
+scons --target=mdk5
+scons --dist
+scons --dist
+menuconfig
+menuconfig
+scons --dist
+menuconfig
+scons --dist
+menuconfig
+plink.exe -serial COM4 -sercfg 115200,8,n,1,N
+plink.exe -serial COM3 -sercfg 115200,8,n,1,N
+menuconfig
+scons --dist
+gh repo clone RT-Thread/rt-thread
+git
+scons --target = mdk5
+scons --dist
+scons --target=mdk5
+scons --dist
+scons --target = mdk5
+scons --target=mdk5
+scons --dist
+scons --dist
+menuconfig
+menuconfig
+menuconfig
+plink.exe -serial COM4 -sercfg 115200,8,n,1,N
+clear
+cl
+
+scons --dixt
+scons --dist
+pkgs --upd
+menuconfig
+mycom.bat
+ls
+menuconfig
+pkgs --upd
+menuconfig
+pkgs --upd
+menuconfig
+menuconfig
+pkgs --upd
+menuconfig
+ls
+mycom.bat 
+mycom.bat 
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+meunconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+scon --target=mdk5
+scons --target=mdk5
+menuconfig
+scons --dist
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+scons --dist
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+menuconfig
+scons target=mdk5
+scons --target=mdk5
+scons --dist
+menuconfig
+scons --dist
+scons target=mdk5
+scons --target=mdk5
+scons --dist
+menuconfig
+scons --dist
+menuconfig
+menuconfig
+scons --dist
+menuconfig
+scons --dist
+menuconfig
+menuconfig
+scons --dist
+menuconfig
+menuconfig
+menuconfig
+menuconfig

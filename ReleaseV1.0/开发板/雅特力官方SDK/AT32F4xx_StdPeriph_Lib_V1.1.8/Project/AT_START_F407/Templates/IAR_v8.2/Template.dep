@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2165959702</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_adc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_can.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_bkp.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dma.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_gpio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_iwdg.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_pwr.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dbgmcu.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_i2c.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_crc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_exti.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rcc.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dac.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_flash.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_adc.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_sdio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_tim.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\misc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\misc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_wwdg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32_board.o</file>
+            <file>$PROJ_DIR$\..\..\..\AT32_Board\at32_board.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_at32f4xx.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_xmc.c</file>
+            <file>$PROJ_DIR$\..\main.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_wwdg.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_spi.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\CMSIS\CM4\DeviceSupport\startup\iar\startup_at32f407vgt7.s</file>
+            <file>$PROJ_DIR$\..\system_at32f4xx.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rtc.c</file>
+            <file>$PROJ_DIR$\..\at32f4xx_it.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dbgmcu.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_exti.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_usart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_it.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dac.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_tim.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dma.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_can.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_it.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_bkp.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_flash.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_flash.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_pwr.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\misc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_spi.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_rtc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_xmc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_sdio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_crc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_bkp.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_rcc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_can.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_usart.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_xmc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32_board.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_iwdg.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\Template.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_at32f4xx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_usart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_rtc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_rcc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dac.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_at32f407vgt7.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_sdio.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_i2c.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_wwdg.xcl</file>
+            <file>$PROJ_DIR$\Debug\Exe\Template.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_iwdg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_dbgmcu.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_gpio.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_crc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_pwr.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_spi.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_i2c.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_tim.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\at32f4xx_exti.o</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 72</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_can.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_bkp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_iwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_pwr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dbgmcu.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_exti.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dac.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_sdio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_tim.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\AT32_Board\at32_board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_xmc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_wwdg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 71</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\CMSIS\CM4\DeviceSupport\startup\iar\startup_at32f407vgt7.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\system_at32f4xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rtc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\at32f4xx_it.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

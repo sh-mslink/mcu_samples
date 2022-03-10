@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armJET.dll" 
+
+"D:\培训资料\开发板\SDK\AT32F4xx_StdPeriph_Lib_V1.1.8\Project\AT_START_F407\Templates\IAR_v8.2\Debug\Exe\Template.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\ArteryTek\AT32F4xx_XL.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\flashloader\ArteryTek\AT32F407\AT32F407VGT7\FlashAT32F407VGT7.board" 
+
+
+
+

@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp
+".\objects\run_in_spim.o"
+".\objects\main.o"
+".\objects\at32f4xx_it.o"
+".\objects\at32_board.o"
+".\objects\startup_at32f407vgt7.o"
+".\objects\system_at32f4xx.o"
+".\objects\at32f4xx_flash.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_rcc.o"
+".\objects\at32f4xx_usart.o"
+".\objects\misc.o"
+--library_type=microlib --strict --scatter "..\run_in_SPIM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\run_in_SPIM.map" -o .\Objects\run_in_SPIM.axf

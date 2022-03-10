@@ -1,0 +1,402 @@
+###############################################################################
+#
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 22/Aug/2019  12:43:56
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Exe\Project_L1.out
+#    Map file     =  
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\List\Project_L1.map
+#    Command line =  
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\arm_fir_data.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32_board.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_acc.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_dbgmcu.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_dma.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_exti.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_flash.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_gpio.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_it.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_pwr.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_rcc.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\at32f4xx_usart.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\fir_filter_symbol.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\main.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\math_helper.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\misc.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\startup_at32f413rx_hd.o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj\system_at32f4xx.o
+#        -o
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Exe\Project_L1.out
+#        --map
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\List\Project_L1.map
+#        --config
+#        D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\..\..\..\..\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Code.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** RESERVED RANGES
+***
+
+Ranges reserved by absolute symbols:
+   [0x08001519-0x08001566]
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x08000fff] |
+                [from 0x08003000 to 0x0803ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20006fff] { rw, block CSTACK, block HEAP };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A1":                                       0x170
+  .intvec             ro code  0x08000000   0x170  startup_at32f413rx_hd.o [2]
+                             - 0x08000170   0x170
+
+"P1", part 1 of 2:                          0x1c1
+  .rodata             const    0x08000170     0x0  zero_init3.o [6]
+  .rodata             const    0x08000170     0x0  lz77_init.o [6]
+  Initializer bytes   const    0x08000170   0x1c1  <for P2 s0>
+                             - 0x08000331   0x1c1
+
+"P1", part 2 of 2:                         0x1694
+  .text               ro code  0x08003000   0x2e8  xlog.o [5]
+  .text               ro code  0x080032e8    0x42  xdnorm.o [5]
+  .text               ro code  0x0800332c     0xc  errno.o [4]
+  .text               ro code  0x08003338    0x2e  DblCmpLe.o [5]
+  .text               ro code  0x08003368   0x1a2  DblMul.o [5]
+  .text               ro code  0x0800350c    0xe8  DblAdd.o [5]
+  .text               ro code  0x080035f4   0x256  DblDiv.o [5]
+  .text               ro code  0x0800384c   0x180  DblSub.o [5]
+  .text               ro code  0x080039cc    0x2c  I32ToDbl.o [5]
+  .text               ro code  0x080039f8     0x2  xtls.o [4]
+  .text               ro code  0x080039fc   0x21c  at32_board.o [2]
+  .text               ro code  0x08003c18    0x4c  at32f4xx_rcc.o [2]
+  .text               ro code  0x08003c64    0xe6  at32f4xx_gpio.o [2]
+  .text               ro code  0x08003d4c    0xa0  misc.o [2]
+  .text               ro code  0x08003dec   0x1c2  lz77_init.o [6]
+  .text               ro code  0x08003fae     0x6  abort.o [4]
+  .text               ro code  0x08003fb4    0x14  exit.o [7]
+  .text               ro code  0x08003fc8   0x188  system_at32f4xx.o [2]
+  .text               ro code  0x08004150    0xd4  math_helper.o [2]
+  .text               ro code  0x08004224    0x4e  FltToDbl.o [5]
+  .text               ro code  0x08004272    0x12  log10.o [5]
+  .text               ro code  0x08004284    0x90  DblToFlt.o [5]
+  .text               ro code  0x08004314    0xc8  main.o [2]
+  .text               ro code  0x080043dc    0x8c  at32f4xx_flash.o [2]
+  .text               ro code  0x08004468    0x40  zero_init3.o [6]
+  .text               ro code  0x080044a8    0x30  at32f4xx_it.o [2]
+  .text               ro code  0x080044d8    0x28  data_init.o [6]
+  .text               ro code  0x08004500    0x22  fpinit_M.o [5]
+  .iar.init_table     const    0x08004524    0x2c  - Linker created -
+  .text               ro code  0x08004550    0x1a  cmain.o [6]
+  .text               ro code  0x0800456a     0x4  low_level_init.o [4]
+  .text               ro code  0x0800456e     0x4  exit.o [4]
+  .text               ro code  0x08004574     0xa  cexit.o [6]
+  .text               ro code  0x08004580    0x10  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004590     0xc  cstartup_M.o [6]
+  .text               ro code  0x0800459c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045a0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045a4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045a8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045ac     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045b0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045b4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045b8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045bc     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045c0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045c4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045c8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045cc     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045d0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045d4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045d8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045dc     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045e0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045e4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045e8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045ec     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045f0     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045f4     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045f8     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x080045fc     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004600     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004604     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004608     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800460c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004610     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004614     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004618     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800461c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004620     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004624     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004628     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800462c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004630     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004634     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004638     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800463c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004640     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004644     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004648     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800464c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004650     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004654     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004658     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800465c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004660     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004664     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004668     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800466c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004670     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004674     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004678     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800467c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004680     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004684     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004688     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x0800468c     0x4  startup_at32f413rx_hd.o [2]
+  .text               ro code  0x08004690     0x4  startup_at32f413rx_hd.o [2]
+                             - 0x08004694  0x1694
+
+"P2":                                      0x1f50
+  P2 s0                        0x20000000   0xa44  <Init block>
+    .data             inited   0x20000000   0x500  arm_fir_data.o [2]
+    .data             inited   0x20000500   0x500  arm_fir_data.o [2]
+    .data             inited   0x20000a00    0x10  at32_board.o [2]
+    .data             inited   0x20000a10    0x10  at32_board.o [2]
+    .data             inited   0x20000a20     0x8  at32_board.o [2]
+    .data             inited   0x20000a28     0x8  at32_board.o [2]
+    .data             inited   0x20000a30     0x8  at32_board.o [2]
+    .data             inited   0x20000a38     0x4  at32_board.o [2]
+    .data             inited   0x20000a3c     0x4  system_at32f4xx.o [2]
+    __DLIB_PERTHREAD  inited   0x20000a40     0x4  errno.o [4]
+  .bss                zero     0x20000a44   0x500  main.o [2]
+  .bss                zero     0x20000f44     0x4  at32_board.o [2]
+  .bss                zero     0x20000f48     0x4  at32_board.o [2]
+  CSTACK                       0x20000f50  0x1000  <Block>
+    CSTACK            uninit   0x20000f50  0x1000  <Block tail>
+                             - 0x20001f50  0x1f50
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x508:
+          0x20000a44  0x508
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x1c1 (17% of destination):
+          0x08000170  0x1c1
+    1 destination range, total size 0xa44:
+          0x20000000  0xa44
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4: [1]
+    --------------------------------------------------
+    Total:
+
+D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj: [2]
+    arm_fir_data.o                        437    2 560
+    at32_board.o                 540       10       68
+    at32f4xx_flash.o             140
+    at32f4xx_gpio.o              230
+    at32f4xx_it.o                 48
+    at32f4xx_rcc.o                76
+    main.o                       200             1 280
+    math_helper.o                212
+    misc.o                       160
+    startup_at32f413rx_hd.o      632
+    system_at32f4xx.o            392        1        4
+    --------------------------------------------------
+    Total:                     2 630      448    3 912
+
+command line: [3]
+    --------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [4]
+    abort.o                        6
+    errno.o                       12        1        4
+    exit.o                         4
+    low_level_init.o               4
+    xtls.o                         2
+    --------------------------------------------------
+    Total:                        28        1        4
+
+m7M_tls.a: [5]
+    DblAdd.o                     232
+    DblCmpLe.o                    46
+    DblDiv.o                     598
+    DblMul.o                     418
+    DblSub.o                     384
+    DblToFlt.o                   144
+    FltToDbl.o                    78
+    I32ToDbl.o                    44
+    fpinit_M.o                    34
+    log10.o                       18
+    xdnorm.o                      66
+    xlog.o                       744
+    --------------------------------------------------
+    Total:                     2 806
+
+rt7M_tl.a: [6]
+    cexit.o                       10
+    cmain.o                       26
+    cstartup_M.o                  12
+    data_init.o                   40
+    lz77_init.o                  450
+    zero_init3.o                  64
+    --------------------------------------------------
+    Total:                       602
+
+shb_l.a: [7]
+    exit.o                        20
+    --------------------------------------------------
+    Total:                        20
+
+    Gaps                          16        2
+    Linker created                         44    4 096
+------------------------------------------------------
+    Grand Total:               6 102      495    8 012
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08004524          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08004550          --   Gb  - Linker created -
+?main                   0x08004551         Code  Gb  cmain.o [6]
+AT32_BUTTON_Init        0x08003a35   0x3c  Code  Gb  at32_board.o [2]
+AT32_BUTTON_State       0x08003a71   0x18  Code  Gb  at32_board.o [2]
+AT32_Board_Init         0x080039fd   0x38  Code  Gb  at32_board.o [2]
+AT32_LEDn_Init          0x08003a89   0x42  Code  Gb  at32_board.o [2]
+AT32_LEDn_OFF           0x08003acb   0x26  Code  Gb  at32_board.o [2]
+AT32_LEDn_Toggle        0x08003af1   0x32  Code  Gb  at32_board.o [2]
+BUTTON_GPIO_PIN         0x20000a38    0x4  Data  Gb  at32_board.o [2]
+BUTTON_GPIO_PORT        0x20000a28    0x8  Data  Gb  at32_board.o [2]
+BUTTON_GPIO_RCC_CLK     0x20000a30    0x8  Data  Gb  at32_board.o [2]
+BusFault_Handler        0x080044af    0x2  Code  Gb  at32f4xx_it.o [2]
+CSTACK$$Base            0x20000f50          --   Gb  - Linker created -
+CSTACK$$Limit           0x20001f50          --   Gb  - Linker created -
+DebugMon_Handler        0x080044b5    0x2  Code  Gb  at32f4xx_it.o [2]
+Delay_init              0x08003b25   0x38  Code  Gb  at32_board.o [2]
+Delay_ms                0x08003b5d   0x80  Code  Gb  at32_board.o [2]
+Enable_Flash_INT        0x080043a9   0x34  Code  Gb  main.o [2]
+FIR_lowpass_filter {Abs}
+                        0x08001519   0x4e  Code  Gb  fir_filter_symbol.o [1]
+FLASH_INTConfig         0x08004405   0x4e  Code  Gb  at32f4xx_flash.o [2]
+FLASH_IRQHandler        0x080044bb   0x18  Code  Gb  at32f4xx_it.o [2]
+FLASH_Lock              0x080043f3   0x12  Code  Gb  at32f4xx_flash.o [2]
+FLASH_Unlock            0x080043dd   0x16  Code  Gb  at32f4xx_flash.o [2]
+GPIO_Init               0x08003c65   0xc0  Code  Gb  at32f4xx_gpio.o [2]
+GPIO_ReadInputDataBit   0x08003d35   0x16  Code  Gb  at32f4xx_gpio.o [2]
+GPIO_StructInit         0x08003d25   0x10  Code  Gb  at32f4xx_gpio.o [2]
+HardFault_Handler       0x080044ab    0x2  Code  Gb  at32f4xx_it.o [2]
+InStream_Read           0x08003ded   0x22  Code  Lc  lz77_init.o [6]
+LED_GPIO_PIN            0x20000a20    0x8  Data  Gb  at32_board.o [2]
+LED_GPIO_PORT           0x20000a00   0x10  Data  Gb  at32_board.o [2]
+LED_GPIO_RCC_CLK        0x20000a10   0x10  Data  Gb  at32_board.o [2]
+MemManage_Handler       0x080044ad    0x2  Code  Gb  at32f4xx_it.o [2]
+NMI_Handler             0x080044a9    0x2  Code  Gb  at32f4xx_it.o [2]
+NVIC_Init               0x08003d4d   0x68  Code  Gb  misc.o [2]
+OutStream_Write         0x08003e0f   0x40  Code  Lc  lz77_init.o [6]
+PendSV_Handler          0x080044b7    0x2  Code  Gb  at32f4xx_it.o [2]
+RCC_APB2PeriphClockCmd  0x08003c19   0x20  Code  Gb  at32f4xx_rcc.o [2]
+RCC_StepModeCmd         0x08003c39   0x22  Code  Gb  at32f4xx_rcc.o [2]
+Region$$Table$$Base     0x08004524          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08004550          --   Gb  - Linker created -
+SVC_Handler             0x080044b3    0x2  Code  Gb  at32f4xx_it.o [2]
+SetSysClock             0x08004035    0x8  Code  Lc  system_at32f4xx.o [2]
+SetSysClockTo192M       0x0800403d   0xe4  Code  Lc  system_at32f4xx.o [2]
+SysTick_CLKSourceConfig
+                        0x08003db5   0x20  Code  Gb  misc.o [2]
+SysTick_Handler         0x080044b9    0x2  Code  Gb  at32f4xx_it.o [2]
+SystemCoreClock         0x20000a3c    0x4  Data  Gb  system_at32f4xx.o [2]
+SystemInit              0x08003fc9   0x6c  Code  Gb  system_at32f4xx.o [2]
+UsageFault_Handler      0x080044b1    0x2  Code  Gb  at32f4xx_it.o [2]
+__aeabi_cdcmple         0x08003339         Code  Gb  DblCmpLe.o [5]
+__aeabi_d2f             0x08004285         Code  Gb  DblToFlt.o [5]
+__aeabi_dadd            0x0800350d         Code  Gb  DblAdd.o [5]
+__aeabi_ddiv            0x080035f5         Code  Gb  DblDiv.o [5]
+__aeabi_dmul            0x08003369         Code  Gb  DblMul.o [5]
+__aeabi_dsub            0x0800384d         Code  Gb  DblSub.o [5]
+__aeabi_errno_addr      0x0800332d    0x6  Code  Gb  errno.o [4]
+__aeabi_f2d             0x08004225         Code  Gb  FltToDbl.o [5]
+__aeabi_i2d             0x080039cd         Code  Gb  I32ToDbl.o [5]
+__cmain                 0x08004551         Code  Gb  cmain.o [6]
+__exit                  0x08003fb5   0x14  Code  Gb  exit.o [7]
+__iar_Dnorm             0x080032e9   0x42  Code  Gb  xdnorm.o [5]
+__iar_Errno             0x20000a40    0x4  Data  Gb  errno.o [4]
+__iar_Log               0x08003001  0x25a  Code  Gb  xlog.o [5]
+__iar_dadd              0x08003521         Code  Gb  DblAdd.o [5]
+__iar_data_init3        0x080044d9   0x28  Code  Gb  data_init.o [6]
+__iar_dlib_perthread_access
+                        0x080039f9    0x2  Code  Gb  xtls.o [4]
+__iar_dsub              0x08003861         Code  Gb  DblSub.o [5]
+__iar_dsubStart         0x08003873         Code  Gb  DblSub.o [5]
+__iar_init_vfp          0x08004501         Code  Gb  fpinit_M.o [5]
+__iar_lz77_init3        0x08003e4f  0x160  Code  Gb  lz77_init.o [6]
+__iar_program_start     0x08004591         Code  Gb  cstartup_M.o [6]
+__iar_ui2d              0x080039e1         Code  Gb  I32ToDbl.o [5]
+__iar_vfp_log10         0x08004273   0x12  Code  Gb  log10.o [5]
+__iar_zero_init3        0x08004469   0x40  Code  Gb  zero_init3.o [6]
+__low_level_init        0x0800456b    0x4  Code  Gb  low_level_init.o [4]
+__vector_table          0x08000000         Data  Gb  startup_at32f413rx_hd.o [2]
+_call_main              0x0800455d         Code  Gb  cmain.o [6]
+_exit                   0x08004575         Code  Gb  cexit.o [6]
+_main                   0x08004567         Code  Gb  cmain.o [6]
+abort                   0x08003faf    0x6  Code  Gb  abort.o [4]
+arm_snr_f32             0x08004151   0xc6  Code  Gb  math_helper.o [2]
+exit                    0x0800456f    0x4  Code  Gb  exit.o [4]
+fac_ms                  0x20000f48    0x4  Data  Lc  at32_board.o [2]
+fac_us                  0x20000f44    0x4  Data  Lc  at32_board.o [2]
+main                    0x08004315   0x84  Code  Gb  main.o [2]
+refOutput               0x20000500  0x500  Data  Gb  arm_fir_data.o [2]
+testInput_f32_1kHz_15kHz
+                        0x20000000  0x500  Data  Gb  arm_fir_data.o [2]
+testOutput              0x20000a44  0x500  Data  Lc  main.o [2]
+
+
+[1] = D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4
+[2] = D:\AT32F4xx_StdPeriph_Lib_V1.1.4\Utilities\AT32F413_SLIB_Demo\Project_L1\IAR_V7.4\End-User-Project\Obj
+[3] = command line
+[4] = dl7M_tlf.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  6 102 bytes of readonly  code memory
+    495 bytes of readonly  data memory
+  8 012 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,2003 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.BUTTON_EXTI_Init) refers to at32f4xx_gpio.o(i.GPIO_EXTILineConfig) for GPIO_EXTILineConfig
+    main.o(i.BUTTON_EXTI_Init) refers to at32f4xx_exti.o(i.EXTI_StructInit) for EXTI_StructInit
+    main.o(i.BUTTON_EXTI_Init) refers to at32f4xx_exti.o(i.EXTI_Init) for EXTI_Init
+    main.o(i.BUTTON_EXTI_Init) refers to misc.o(i.NVIC_Init) for NVIC_Init
+    main.o(i.BUTTON_EXTI_Init) refers to main.o(.data) for .data
+    main.o(i.EXTI0_IRQHandler) refers to at32_board.o(i.Delay_ms) for Delay_ms
+    main.o(i.EXTI0_IRQHandler) refers to at32f4xx_exti.o(i.EXTI_ClearIntPendingBit) for EXTI_ClearIntPendingBit
+    main.o(i.EXTI0_IRQHandler) refers to at32f4xx_gpio.o(i.GPIO_ReadInputData) for GPIO_ReadInputData
+    main.o(i.EXTI0_IRQHandler) refers to main.o(.data) for .data
+    main.o(i.EXTI0_IRQHandler) refers to at32_board.o(.data) for BUTTON_GPIO_PORT
+    main.o(i.EXTI15_10_IRQHandler) refers to at32_board.o(i.Delay_ms) for Delay_ms
+    main.o(i.EXTI15_10_IRQHandler) refers to at32f4xx_exti.o(i.EXTI_ClearIntPendingBit) for EXTI_ClearIntPendingBit
+    main.o(i.EXTI15_10_IRQHandler) refers to at32f4xx_gpio.o(i.GPIO_ReadInputData) for GPIO_ReadInputData
+    main.o(i.EXTI15_10_IRQHandler) refers to main.o(.data) for .data
+    main.o(i.EXTI15_10_IRQHandler) refers to at32_board.o(.data) for BUTTON_GPIO_PORT
+    main.o(i.MCO_Config) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    main.o(i.MCO_Config) refers to at32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    main.o(i.MCO_Config) refers to at32f4xx_rcc.o(i.RCC_CLKOUTConfig) for RCC_CLKOUTConfig
+    main.o(i.main) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    main.o(i.main) refers to at32_board.o(i.AT32_Board_Init) for AT32_Board_Init
+    main.o(i.main) refers to main.o(i.MCO_Config) for MCO_Config
+    main.o(i.main) refers to main.o(i.BUTTON_EXTI_Init) for BUTTON_EXTI_Init
+    main.o(i.main) refers to at32_board.o(i.AT32_LEDn_Toggle) for AT32_LEDn_Toggle
+    main.o(i.main) refers to at32_board.o(i.Delay_ms) for Delay_ms
+    main.o(i.main) refers to main.o(.data) for .data
+    at32_board.o(i.AT32_BUTTON_Init) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    at32_board.o(i.AT32_BUTTON_Init) refers to at32f4xx_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    at32_board.o(i.AT32_BUTTON_Init) refers to at32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    at32_board.o(i.AT32_BUTTON_Init) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_BUTTON_Press) refers to at32_board.o(i.AT32_BUTTON_State) for AT32_BUTTON_State
+    at32_board.o(i.AT32_BUTTON_Press) refers to at32_board.o(i.Delay_ms) for Delay_ms
+    at32_board.o(i.AT32_BUTTON_Press) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_BUTTON_State) refers to at32f4xx_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit
+    at32_board.o(i.AT32_BUTTON_State) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_Board_Init) refers to at32_board.o(i.Delay_init) for Delay_init
+    at32_board.o(i.AT32_Board_Init) refers to at32_board.o(i.AT32_LEDn_Init) for AT32_LEDn_Init
+    at32_board.o(i.AT32_Board_Init) refers to at32_board.o(i.AT32_LEDn_OFF) for AT32_LEDn_OFF
+    at32_board.o(i.AT32_Board_Init) refers to at32_board.o(i.AT32_BUTTON_Init) for AT32_BUTTON_Init
+    at32_board.o(i.AT32_LEDn_Init) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    at32_board.o(i.AT32_LEDn_Init) refers to at32f4xx_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    at32_board.o(i.AT32_LEDn_Init) refers to at32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    at32_board.o(i.AT32_LEDn_Init) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_LEDn_OFF) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_LEDn_ON) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_LEDn_Toggle) refers to at32_board.o(.data) for .data
+    at32_board.o(i.AT32_USB_GPIO_init) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    at32_board.o(i.AT32_USB_GPIO_init) refers to at32f4xx_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    at32_board.o(i.AT32_USB_GPIO_init) refers to at32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    at32_board.o(i.AT32_USB_GPIO_init) refers to at32f4xx_gpio.o(i.GPIO_ResetBits) for GPIO_ResetBits
+    at32_board.o(i.Delay_init) refers to misc.o(i.SysTick_CLKSourceConfig) for SysTick_CLKSourceConfig
+    at32_board.o(i.Delay_init) refers to system_at32f4xx.o(.data) for SystemCoreClock
+    at32_board.o(i.Delay_init) refers to at32_board.o(.data) for .data
+    at32_board.o(i.Delay_ms) refers to at32_board.o(.data) for .data
+    at32_board.o(i.Delay_sec) refers to at32_board.o(i.Delay_ms) for Delay_ms
+    at32_board.o(i.Delay_us) refers to at32_board.o(.data) for .data
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_gpio.o(i.GPIO_StructInit) for GPIO_StructInit
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_gpio.o(i.GPIO_Init) for GPIO_Init
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_usart.o(i.USART_StructInit) for USART_StructInit
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_usart.o(i.USART_Init) for USART_Init
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_usart.o(i.USART_INTConfig) for USART_INTConfig
+    at32_board.o(i.UART_Print_Init) refers to at32f4xx_usart.o(i.USART_Cmd) for USART_Cmd
+    at32_board.o(i.fputc) refers to at32f4xx_usart.o(i.USART_SendData) for USART_SendData
+    at32_board.o(i.fputc) refers to at32f4xx_usart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
+    system_at32f4xx.o(i.SetSysClock) refers to system_at32f4xx.o(i.SetSysClockTo240M) for SetSysClockTo240M
+    system_at32f4xx.o(i.SetSysClockTo240M) refers to at32f4xx_rcc.o(i.RCC_StepModeCmd) for RCC_StepModeCmd
+    system_at32f4xx.o(i.SystemCoreClockUpdate) refers to system_at32f4xx.o(.data) for .data
+    system_at32f4xx.o(i.SystemInit) refers to system_at32f4xx.o(i.SetSysClock) for SetSysClock
+    startup_at32f407vgt7.o(RESET) refers to startup_at32f407vgt7.o(STACK) for __initial_sp
+    startup_at32f407vgt7.o(RESET) refers to startup_at32f407vgt7.o(.text) for Reset_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.NMI_Handler) for NMI_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.HardFault_Handler) for HardFault_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.MemManage_Handler) for MemManage_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.BusFault_Handler) for BusFault_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.SVC_Handler) for SVC_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.PendSV_Handler) for PendSV_Handler
+    startup_at32f407vgt7.o(RESET) refers to at32f4xx_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_at32f407vgt7.o(RESET) refers to main.o(i.EXTI0_IRQHandler) for EXTI0_IRQHandler
+    startup_at32f407vgt7.o(RESET) refers to main.o(i.EXTI15_10_IRQHandler) for EXTI15_10_IRQHandler
+    startup_at32f407vgt7.o(.text) refers to system_at32f4xx.o(i.SystemInit) for SystemInit
+    startup_at32f407vgt7.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    at32f4xx_adc.o(i.ADC_AnalogWDGCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_AnalogWDGCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_AnalogWDGSingleChannelConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_AnalogWDGSingleChannelConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_AnalogWDGThresholdsConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_AnalogWDGThresholdsConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_AutoInjectedConvCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_AutoInjectedConvCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_ClearFlag) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_ClearINTPendingBit) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_Ctrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_Ctrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_DMACtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_DMACtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_DiscModeChannelCountConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_DiscModeChannelCountConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_DiscModeCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_DiscModeCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_ExternalTrigConvCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_ExternalTrigConvCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetCalibrationStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetCalibrationStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetConversionValue) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetConversionValue) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetFlagStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetINTStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetInjectedConversionValue) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetInjectedConversionValue) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetResetCalibrationStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetResetCalibrationStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetSoftwareStartConvStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetSoftwareStartConvStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_GetSoftwareStartInjectedConvCtrlStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_GetSoftwareStartInjectedConvCtrlStatus) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_INTConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_Init) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_InjectedChannelConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_InjectedChannelConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_InjectedDiscModeCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_InjectedDiscModeCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_InjectedSequencerLengthConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_InjectedSequencerLengthConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_RegularChannelConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_RegularChannelConfig) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_Reset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_adc.o(i.ADC_Reset) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_RstCalibration) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_RstCalibration) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_SetInjectedOffset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_SetInjectedOffset) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_SoftwareStartConvCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_SoftwareStartConvCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_SoftwareStartInjectedConvCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_SoftwareStartInjectedConvCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_StartCalibration) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_StartCalibration) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_adc.o(i.ADC_TempSensorVrefintCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_adc.o(i.ADC_TempSensorVrefintCtrl) refers to at32f4xx_adc.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_IntConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_IntConfig) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_RTCOutputConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_RTCOutputConfig) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_ReadBackupReg) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_ReadBackupReg) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_Reset) refers to at32f4xx_rcc.o(i.RCC_BackupResetCmd) for RCC_BackupResetCmd
+    at32f4xx_bkp.o(i.BKP_SetRTCCalValue) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_SetRTCCalValue) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_TamperPinCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_TamperPinCmd) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_TamperPinLvConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_TamperPinLvConfig) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_bkp.o(i.BKP_WriteBackupReg) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_bkp.o(i.BKP_WriteBackupReg) refers to at32f4xx_bkp.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_CancelTransmit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_CancelTransmit) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_ClearFlag) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_ClearINTPendingBit) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_DBGFreeze) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_DBGFreeze) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_FIFORelease) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_FIFORelease) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_FilterInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_FilterInit) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_GetFlagStatus) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_GetINTStatus) refers to at32f4xx_can.o(i.CheckINTStatus) for CheckINTStatus
+    at32f4xx_can.o(i.CAN_GetINTStatus) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_GetLSBTransmitErrorCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_GetLSBTransmitErrorCounter) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_GetLastErrorCode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_GetLastErrorCode) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_GetReceiveErrorCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_GetReceiveErrorCounter) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_INTConfig) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_Init) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_MessagePending) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_MessagePending) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_OperatingModeRequest) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_OperatingModeRequest) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_Receive) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_Receive) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_can.o(i.CAN_Reset) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_SlaveStartBank) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_SlaveStartBank) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_Sleep) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_Sleep) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_TTComModeCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_TTComModeCtrl) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_Transmit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_Transmit) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_TransmitStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_TransmitStatus) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_can.o(i.CAN_WakeUp) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_can.o(i.CAN_WakeUp) refers to at32f4xx_can.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_Ctrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_Ctrl) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_DMACtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_DMACtrl) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_DualSoftwareTriggerCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_DualSoftwareTriggerCtrl) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_GetDataOutputValue) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_GetDataOutputValue) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_Init) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_dac.o(i.DAC_SetChannel1Data) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_SetChannel1Data) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_SetChannel2Data) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_SetChannel2Data) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_SetDualChannelData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_SetDualChannelData) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_SoftwareTriggerCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_SoftwareTriggerCtrl) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dac.o(i.DAC_WaveGenerationCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dac.o(i.DAC_WaveGenerationCtrl) refers to at32f4xx_dac.o(.conststring) for .conststring
+    at32f4xx_dbgmcu.o(i.MCUDBG_PeriphDebugModeConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dbgmcu.o(i.MCUDBG_PeriphDebugModeConfig) refers to at32f4xx_dbgmcu.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_ChannelEnable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_ChannelEnable) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_ClearFlag) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_ClearITPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_ClearITPendingBit) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_Flexible_Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_Flexible_Config) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_GetCurrDataCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_GetCurrDataCounter) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_GetFlagStatus) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_GetITStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_GetITStatus) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_INTConfig) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_Init) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_Reset) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_dma.o(i.DMA_SetCurrDataCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_dma.o(i.DMA_SetCurrDataCounter) refers to at32f4xx_dma.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_ClearFlag) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_ClearIntPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_ClearIntPendingBit) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_GenerateSWInt) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_GenerateSWInt) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_GetFlagStatus) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_GetIntStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_GetIntStatus) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_exti.o(i.EXTI_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_exti.o(i.EXTI_Init) refers to at32f4xx_exti.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_Bank3EncEndAddrConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_Bank3EncEndAddrConfig) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_BootOptConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_BootOptConfig) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_BootOptConfig) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ClearFlag) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_EnableWriteProtect) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_EnableWriteProtect) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_EnableWriteProtect) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_EraseAllPages) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_EraseAllPages) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_EraseBank1AllPages) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_EraseBank2AllPages) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_EraseBank3AllPages) refers to at32f4xx_flash.o(i.FLASH_GetSlibState) for FLASH_GetSlibState
+    at32f4xx_flash.o(i.FLASH_EraseBank3AllPages) refers to at32f4xx_flash.o(i.FLASH_WaitForBank3Process) for FLASH_WaitForBank3Process
+    at32f4xx_flash.o(i.FLASH_ErasePage) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ErasePage) refers to at32f4xx_flash.o(i.FLASH_WaitForBank3Process) for FLASH_WaitForBank3Process
+    at32f4xx_flash.o(i.FLASH_ErasePage) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_ErasePage) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_ErasePage) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_EraseUserOptionBytes) refers to at32f4xx_flash.o(i.FLASH_GetReadProtectStatus) for FLASH_GetReadProtectStatus
+    at32f4xx_flash.o(i.FLASH_EraseUserOptionBytes) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_GetFlagStatus) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_INTConfig) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_ProgramByte) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ProgramByte) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_ProgramByte) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_ProgramByte) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank3Process) for FLASH_WaitForBank3Process
+    at32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_ProgramHalfWord) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_ProgramUserOptionByteData) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank3Process) for FLASH_WaitForBank3Process
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank1Process) for FLASH_WaitForBank1Process
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to at32f4xx_flash.o(i.FLASH_WaitForBank2Process) for FLASH_WaitForBank2Process
+    at32f4xx_flash.o(i.FLASH_ProgramWord) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_ReadProtectConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_ReadProtectConfig) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_ReadProtectConfig) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_SlibDisable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_SlibDisable) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_SlibDisable) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_SlibMainEnable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_SlibMainEnable) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_SlibMainEnable) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_UserOptionByteConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_flash.o(i.FLASH_UserOptionByteConfig) refers to at32f4xx_flash.o(i.FLASH_WaitForProcess) for FLASH_WaitForProcess
+    at32f4xx_flash.o(i.FLASH_UserOptionByteConfig) refers to at32f4xx_flash.o(.conststring) for .conststring
+    at32f4xx_flash.o(i.FLASH_WaitForBank1Process) refers to at32f4xx_flash.o(i.FLASH_GetBank1Status) for FLASH_GetBank1Status
+    at32f4xx_flash.o(i.FLASH_WaitForBank2Process) refers to at32f4xx_flash.o(i.FLASH_GetBank2Status) for FLASH_GetBank2Status
+    at32f4xx_flash.o(i.FLASH_WaitForBank3Process) refers to at32f4xx_flash.o(i.FLASH_GetBank3Status) for FLASH_GetBank3Status
+    at32f4xx_flash.o(i.FLASH_WaitForProcess) refers to at32f4xx_flash.o(i.FLASH_GetBank1Status) for FLASH_GetBank1Status
+    at32f4xx_gpio.o(i.GPIO_AFIOReset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_gpio.o(i.GPIO_ETH_MediaInterfaceConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ETH_MediaInterfaceConfig) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_EXTILineConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_EXTILineConfig) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_EventOutputCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_EventOutputCmd) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_EventOutputConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_EventOutputConfig) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_Init) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_PinsLockConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_PinsLockConfig) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_PinsRemapConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_PinsRemapConfig) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_ReadInputData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ReadInputData) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_ReadInputDataBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ReadInputDataBit) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_ReadOutputData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ReadOutputData) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_ReadOutputDataBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ReadOutputDataBit) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_Reset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_gpio.o(i.GPIO_Reset) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_ResetBits) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_ResetBits) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_SetBits) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_SetBits) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_Write) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_Write) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_gpio.o(i.GPIO_WriteBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_gpio.o(i.GPIO_WriteBit) refers to at32f4xx_gpio.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_ARPCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_ARPCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_AcknowledgeConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_AcknowledgeConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_CalculatePEC) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_CalculatePEC) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_CheckEvent) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_CheckEvent) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_ClearFlag) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_ClearITPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_ClearITPendingBit) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_Cmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_Cmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_DMACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_DMACmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_DMALastTransferCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_DMALastTransferCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_DeInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_DeInit) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_i2c.o(i.I2C_DeInit) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_DualAddressCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_DualAddressCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_FastModeDutyCycleConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_FastModeDutyCycleConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GeneralCallCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GeneralCallCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GenerateSTART) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GenerateSTART) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GenerateSTOP) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GenerateSTOP) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GetFlagStatus) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GetINTStatus) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GetLastEvent) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GetLastEvent) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_GetPEC) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_GetPEC) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_INTConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_Init) refers to at32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    at32f4xx_i2c.o(i.I2C_Init) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_NACKPositionConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_NACKPositionConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_OwnAddress2Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_OwnAddress2Config) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_PECPositionConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_PECPositionConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_ReadRegister) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_ReadRegister) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_ReceiveData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_ReceiveData) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_SMBusAlertConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_SMBusAlertConfig) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_Send7bitAddress) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_Send7bitAddress) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_SendData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_SendData) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_SoftwareResetCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_SoftwareResetCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_StretchClockCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_StretchClockCmd) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_i2c.o(i.I2C_TransmitPEC) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_i2c.o(i.I2C_TransmitPEC) refers to at32f4xx_i2c.o(.conststring) for .conststring
+    at32f4xx_iwdg.o(i.IWDG_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_iwdg.o(i.IWDG_GetFlagStatus) refers to at32f4xx_iwdg.o(.conststring) for .conststring
+    at32f4xx_iwdg.o(i.IWDG_KeyRegWrite) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_iwdg.o(i.IWDG_KeyRegWrite) refers to at32f4xx_iwdg.o(.conststring) for .conststring
+    at32f4xx_iwdg.o(i.IWDG_SetPrescaler) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_iwdg.o(i.IWDG_SetPrescaler) refers to at32f4xx_iwdg.o(.conststring) for .conststring
+    at32f4xx_iwdg.o(i.IWDG_SetReload) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_iwdg.o(i.IWDG_SetReload) refers to at32f4xx_iwdg.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_BackupAccessCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_BackupAccessCtrl) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_ClearFlag) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_EnterSTOPMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_EnterSTOPMode) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_EnterSleepMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_EnterSleepMode) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_GetFlagStatus) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_PVDCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_PVDCtrl) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_PVDLevelConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_PVDLevelConfig) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_pwr.o(i.PWR_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_pwr.o(i.PWR_WakeUpPinCtrl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_pwr.o(i.PWR_WakeUpPinCtrl) refers to at32f4xx_pwr.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_ADCCLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_ADCCLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_AHBCLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_AHBCLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_AHBPeriphClockCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_AHBPeriphClockCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_AHBPeriphResetCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_AHBPeriphResetCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB1CLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB1CLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB2CLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB2CLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_BackupResetCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_BackupResetCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_CLKOUTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_CLKOUTConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_ClearINTPendingBit) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_GetClocksFreq) refers to at32f4xx_rcc.o(.data) for .data
+    at32f4xx_rcc.o(i.RCC_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_GetFlagStatus) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_GetINTStatus) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_HSEClockFailureDetectorCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_HSEClockFailureDetectorCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_HSEConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_HSEConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_HSEDivConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_HSEDivConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_HSI2USB48M) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_HSI2USB48M) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_HSICmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_HSICmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_INTConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_LSEConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_LSEConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_LSICmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_LSICmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_MCO2TMR10) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_MCO2TMR10) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_PLLCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_PLLCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_PLLConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_PLLConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_RTCCLKCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_RTCCLKCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_RTCCLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_RTCCLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_SYSCLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_SYSCLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_SetHSITweakValue) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_SetHSITweakValue) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_StepModeCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_StepModeCmd) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_USBCLKConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_USBCLKConfig) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_USBINTRemap) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rcc.o(i.RCC_USBINTRemap) refers to at32f4xx_rcc.o(.conststring) for .conststring
+    at32f4xx_rcc.o(i.RCC_WaitForHSEStable) refers to at32f4xx_rcc.o(i.RCC_GetFlagStatus) for RCC_GetFlagStatus
+    at32f4xx_rcc.o(i.RCC_WaitForHSEStable) refers to at32f4xx_rcc.o(i.RCC_HSEENDelay) for RCC_HSEENDelay
+    at32f4xx_rtc.o(i.RTC_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_ClearFlag) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_rtc.o(i.RTC_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_ClearINTPendingBit) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_rtc.o(i.RTC_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_GetFlagStatus) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_rtc.o(i.RTC_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_GetINTStatus) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_rtc.o(i.RTC_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_INTConfig) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_rtc.o(i.RTC_SetAlarmValue) refers to at32f4xx_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    at32f4xx_rtc.o(i.RTC_SetAlarmValue) refers to at32f4xx_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    at32f4xx_rtc.o(i.RTC_SetCounter) refers to at32f4xx_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    at32f4xx_rtc.o(i.RTC_SetCounter) refers to at32f4xx_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    at32f4xx_rtc.o(i.RTC_SetDIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_rtc.o(i.RTC_SetDIV) refers to at32f4xx_rtc.o(i.RTC_EnterConfigMode) for RTC_EnterConfigMode
+    at32f4xx_rtc.o(i.RTC_SetDIV) refers to at32f4xx_rtc.o(i.RTC_ExitConfigMode) for RTC_ExitConfigMode
+    at32f4xx_rtc.o(i.RTC_SetDIV) refers to at32f4xx_rtc.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_ATAINTCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_ATAINTCmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_ClearFlag) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_ClearINTPendingBit) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_ClockCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_ClockCmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_CommandCompletionCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_CommandCompletionCmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_DMACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_DMACmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_DataConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_DataConfig) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetBUFCount) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetBUFCount) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetCommandResponse) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetCommandResponse) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetDataCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetDataCounter) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetFlagStatus) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetINTStatus) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetPowerSaveState) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetPowerSaveState) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_GetResponse) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_GetResponse) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_INTConfig) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_Init) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_ReadData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_ReadData) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_Reset) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SendATACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SendATACmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SendCommand) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SendCommand) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SendSDIOSuspendCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SendSDIOSuspendCmd) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SetPowerSaveState) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SetPowerSaveState) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SetSDIOOperation) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SetSDIOOperation) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_SetSDIOReadWaitMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_SetSDIOReadWaitMode) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_StartSDIOReadWait) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_StartSDIOReadWait) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_StopSDIOReadWait) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_StopSDIOReadWait) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_sdio.o(i.SDIO_WriteData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_sdio.o(i.SDIO_WriteData) refers to at32f4xx_sdio.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.I2S_Enable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.I2S_Enable) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.I2S_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.I2S_Init) refers to at32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    at32f4xx_spi.o(i.I2S_Init) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_CRCEN) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_CRCEN) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_Enable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_Enable) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_FrameSizeConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_FrameSizeConfig) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_GetCRC) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_GetCRC) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_GetCRCPolynomial) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_GetCRCPolynomial) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_HalfDuplexTransModeConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_HalfDuplexTransModeConfig) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_ClearFlag) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_ClearINTPendingBit) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_DMAEnable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_DMAEnable) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_GetFlagStatus) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_GetITStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_GetITStatus) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_INTConfig) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_Reset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_spi.o(i.SPI_I2S_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_spi.o(i.SPI_I2S_Reset) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_RxData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_RxData) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_I2S_TxData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_I2S_TxData) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_Init) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_NSSHardwareOutputEnable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_NSSHardwareOutputEnable) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_NSSInternalSoftwareConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_NSSInternalSoftwareConfig) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_spi.o(i.SPI_TxCRC) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_spi.o(i.SPI_TxCRC) refers to at32f4xx_spi.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ARPreloadConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ARPreloadConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_BRKDTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_BRKDTConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_CCPreloadControl) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_CCPreloadControl) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_CCxCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_CCxCmd) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_CCxNCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_CCxNCmd) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearFlag) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearITPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearITPendingBit) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearOC1Ref) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearOC1Ref) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearOC2Ref) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearOC2Ref) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearOC3Ref) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearOC3Ref) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ClearOC4Ref) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ClearOC4Ref) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_Cmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_Cmd) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_CounterModeConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_CounterModeConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_CtrlPWMOutputs) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_CtrlPWMOutputs) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_DIVConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_DIVConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_DMACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_DMACmd) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_DMAConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_DMAConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ETRClockMode1Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ETRClockMode1Config) refers to at32f4xx_tim.o(i.TMR_ETRConfig) for TMR_ETRConfig
+    at32f4xx_tim.o(i.TMR_ETRClockMode1Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ETRClockMode2Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ETRClockMode2Config) refers to at32f4xx_tim.o(i.TMR_ETRConfig) for TMR_ETRConfig
+    at32f4xx_tim.o(i.TMR_ETRClockMode2Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ETRConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ETRConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_EncoderInterfaceConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_EncoderInterfaceConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ForcedOC1Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ForcedOC1Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ForcedOC2Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ForcedOC2Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ForcedOC3Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ForcedOC3Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ForcedOC4Config) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ForcedOC4Config) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GenerateEvent) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GenerateEvent) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetCapture1) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetCapture1) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetCapture2) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetCapture2) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetCapture3) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetCapture3) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetCapture4) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetCapture4) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetCounter) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetDIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetDIV) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetFlagStatus) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_GetINTStatus) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ICInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TI4_Config) for TI4_Config
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TMR_SetIC4DIV) for TMR_SetIC4DIV
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TMR_SetIC1DIV) for TMR_SetIC1DIV
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TMR_SetIC2DIV) for TMR_SetIC2DIV
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TI3_Config) for TI3_Config
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(i.TMR_SetIC3DIV) for TMR_SetIC3DIV
+    at32f4xx_tim.o(i.TMR_ICInit) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_INTConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_ITRxExternalClockConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_ITRxExternalClockConfig) refers to at32f4xx_tim.o(i.TMR_SelectInputTrigger) for TMR_SelectInputTrigger
+    at32f4xx_tim.o(i.TMR_ITRxExternalClockConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_InternalClockConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_InternalClockConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC1FastConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC1FastConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC1Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC1Init) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC1NPolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC1NPolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC1PolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC1PolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC1PreloadConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC1PreloadConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC2FastConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC2FastConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC2Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC2Init) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC2NPolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC2NPolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC2PolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC2PolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC2PreloadConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC2PreloadConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC3FastConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC3FastConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC3Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC3Init) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC3NPolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC3NPolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC3PolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC3PolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC3PreloadConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC3PreloadConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC4FastConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC4FastConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC4Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC4Init) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC4PolarityConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC4PolarityConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_OC4PreloadConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_OC4PreloadConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to at32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to at32f4xx_tim.o(i.TMR_SetIC2DIV) for TMR_SetIC2DIV
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to at32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to at32f4xx_tim.o(i.TMR_SetIC1DIV) for TMR_SetIC1DIV
+    at32f4xx_tim.o(i.TMR_PWMIConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_Reset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_tim.o(i.TMR_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_tim.o(i.TMR_Reset) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectCCDMA) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectCCDMA) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectHALL) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectHALL) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectHallSensor) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectHallSensor) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectInputTrigger) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectInputTrigger) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectMasterSlaveMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectMasterSlaveMode) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectOCxM) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectOCxM) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectOnePulseMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectOnePulseMode) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectOutputTrigger) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectOutputTrigger) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectPlusMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectPlusMode) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SelectSlaveMode) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SelectSlaveMode) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetAutoreload) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetAutoreload) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetClockDivision) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetClockDivision) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetCompare1) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetCompare1) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetCompare2) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetCompare2) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetCompare3) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetCompare3) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetCompare4) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetCompare4) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetCounter) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetIC1DIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetIC1DIV) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetIC2DIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetIC2DIV) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetIC3DIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetIC3DIV) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_SetIC4DIV) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_SetIC4DIV) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_TIxExternalClockConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_TIxExternalClockConfig) refers to at32f4xx_tim.o(i.TI1_Config) for TI1_Config
+    at32f4xx_tim.o(i.TMR_TIxExternalClockConfig) refers to at32f4xx_tim.o(i.TMR_SelectInputTrigger) for TMR_SelectInputTrigger
+    at32f4xx_tim.o(i.TMR_TIxExternalClockConfig) refers to at32f4xx_tim.o(i.TI2_Config) for TI2_Config
+    at32f4xx_tim.o(i.TMR_TIxExternalClockConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_TimeBaseInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_TimeBaseInit) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_UpdateDisableConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_UpdateDisableConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_tim.o(i.TMR_UpdateRequestConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_tim.o(i.TMR_UpdateRequestConfig) refers to at32f4xx_tim.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_ClearFlag) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_ClearITPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_ClearITPendingBit) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_ClockInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_ClockInit) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_Cmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_Cmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_DMACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_DMACmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_GetFlagStatus) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_GetITStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_GetITStatus) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_HalfDuplexCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_HalfDuplexCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_INTConfig) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_Init) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_Init) refers to at32f4xx_rcc.o(i.RCC_GetClocksFreq) for RCC_GetClocksFreq
+    at32f4xx_usart.o(i.USART_Init) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_IrDACmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_IrDACmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_IrDAConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_IrDAConfig) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_LINBreakDetectLengthConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_LINBreakDetectLengthConfig) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_LINCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_LINCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_OneBitMethodCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_OneBitMethodCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_OverSampling8Cmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_OverSampling8Cmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_ReceiveData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_ReceiveData) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_ReceiverWakeUpCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_ReceiverWakeUpCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_Reset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_Reset) refers to at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
+    at32f4xx_usart.o(i.USART_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_usart.o(i.USART_Reset) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SendBreak) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SendBreak) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SendData) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SendData) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SetAddress) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SetAddress) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SetGuardTime) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SetGuardTime) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SetPrescaler) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SetPrescaler) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SmartCardCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SmartCardCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_SmartCardNACKCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_SmartCardNACKCmd) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_usart.o(i.USART_WakeUpConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_usart.o(i.USART_WakeUpConfig) refers to at32f4xx_usart.o(.conststring) for .conststring
+    at32f4xx_wwdg.o(i.WWDG_Enable) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_wwdg.o(i.WWDG_Enable) refers to at32f4xx_wwdg.o(.conststring) for .conststring
+    at32f4xx_wwdg.o(i.WWDG_Reset) refers to at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
+    at32f4xx_wwdg.o(i.WWDG_SetCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_wwdg.o(i.WWDG_SetCounter) refers to at32f4xx_wwdg.o(.conststring) for .conststring
+    at32f4xx_wwdg.o(i.WWDG_SetPrescaler) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_wwdg.o(i.WWDG_SetPrescaler) refers to at32f4xx_wwdg.o(.conststring) for .conststring
+    at32f4xx_wwdg.o(i.WWDG_SetWindowCounter) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_wwdg.o(i.WWDG_SetWindowCounter) refers to at32f4xx_wwdg.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_ClearFlag) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_ClearFlag) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_ClearINTPendingBit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_ClearINTPendingBit) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_ExtTimingConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_ExtTimingConfig) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_GetFlagStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_GetFlagStatus) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_GetINTStatus) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_GetINTStatus) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_INTConfig) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_INTConfig) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NANDCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NANDCmd) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NANDECCCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NANDECCCmd) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NANDInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NANDInit) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NANDReset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NANDReset) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NORSRAMCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NORSRAMCmd) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NORSRAMInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NORSRAMInit) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_NORSRAMReset) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_NORSRAMReset) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_PCCARDCmd) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_PCCARDCmd) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    at32f4xx_xmc.o(i.XMC_PCCARDInit) refers to main.o(i.assert_failed) for assert_failed
+    at32f4xx_xmc.o(i.XMC_PCCARDInit) refers to at32f4xx_xmc.o(.conststring) for .conststring
+    misc.o(i.NVIC_Init) refers to main.o(i.assert_failed) for assert_failed
+    misc.o(i.NVIC_PriorityGroupConfig) refers to main.o(i.assert_failed) for assert_failed
+    misc.o(i.NVIC_SetVectorTable) refers to main.o(i.assert_failed) for assert_failed
+    misc.o(i.NVIC_SystemLPConfig) refers to main.o(i.assert_failed) for assert_failed
+    misc.o(i.SysTick_CLKSourceConfig) refers to main.o(i.assert_failed) for assert_failed
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_at32f407vgt7.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_at32f407vgt7.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_it.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_it.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_it.o(.rrx_text), (6 bytes).
+    Removing at32_board.o(.rev16_text), (4 bytes).
+    Removing at32_board.o(.revsh_text), (4 bytes).
+    Removing at32_board.o(.rrx_text), (6 bytes).
+    Removing at32_board.o(i.AT32_BUTTON_Press), (100 bytes).
+    Removing at32_board.o(i.AT32_BUTTON_State), (24 bytes).
+    Removing at32_board.o(i.AT32_LEDn_ON), (32 bytes).
+    Removing at32_board.o(i.AT32_USB_GPIO_init), (60 bytes).
+    Removing at32_board.o(i.Delay_sec), (34 bytes).
+    Removing at32_board.o(i.Delay_us), (72 bytes).
+    Removing at32_board.o(i.UART_Print_Init), (152 bytes).
+    Removing at32_board.o(i.fputc), (36 bytes).
+    Removing system_at32f4xx.o(.rev16_text), (4 bytes).
+    Removing system_at32f4xx.o(.revsh_text), (4 bytes).
+    Removing system_at32f4xx.o(.rrx_text), (6 bytes).
+    Removing system_at32f4xx.o(i.SystemCoreClockUpdate), (148 bytes).
+    Removing startup_at32f407vgt7.o(HEAP), (512 bytes).
+    Removing at32f4xx_adc.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_adc.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_adc.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_adc.o(i.ADC_AnalogWDGCtrl), (124 bytes).
+    Removing at32f4xx_adc.o(i.ADC_AnalogWDGSingleChannelConfig), (144 bytes).
+    Removing at32f4xx_adc.o(i.ADC_AnalogWDGThresholdsConfig), (96 bytes).
+    Removing at32f4xx_adc.o(i.ADC_AutoInjectedConvCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_ClearFlag), (72 bytes).
+    Removing at32f4xx_adc.o(i.ADC_ClearINTPendingBit), (76 bytes).
+    Removing at32f4xx_adc.o(i.ADC_Ctrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_DMACtrl), (80 bytes).
+    Removing at32f4xx_adc.o(i.ADC_DiscModeChannelCountConfig), (80 bytes).
+    Removing at32f4xx_adc.o(i.ADC_DiscModeCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_ExternalTrigConvCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvConfig), (196 bytes).
+    Removing at32f4xx_adc.o(i.ADC_ExternalTrigInjectedConvCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetCalibrationStatus), (64 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetConversionValue), (56 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetDualModeConversionValue), (12 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetFlagStatus), (96 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetINTStatus), (104 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetInjectedConversionValue), (100 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetResetCalibrationStatus), (64 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetSoftwareStartConvStatus), (64 bytes).
+    Removing at32f4xx_adc.o(i.ADC_GetSoftwareStartInjectedConvCtrlStatus), (64 bytes).
+    Removing at32f4xx_adc.o(i.ADC_INTConfig), (108 bytes).
+    Removing at32f4xx_adc.o(i.ADC_Init), (368 bytes).
+    Removing at32f4xx_adc.o(i.ADC_InjectedChannelConfig), (268 bytes).
+    Removing at32f4xx_adc.o(i.ADC_InjectedDiscModeCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_InjectedSequencerLengthConfig), (84 bytes).
+    Removing at32f4xx_adc.o(i.ADC_RegularChannelConfig), (308 bytes).
+    Removing at32f4xx_adc.o(i.ADC_Reset), (100 bytes).
+    Removing at32f4xx_adc.o(i.ADC_RstCalibration), (60 bytes).
+    Removing at32f4xx_adc.o(i.ADC_SetInjectedOffset), (112 bytes).
+    Removing at32f4xx_adc.o(i.ADC_SoftwareStartConvCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_SoftwareStartInjectedConvCtrl), (88 bytes).
+    Removing at32f4xx_adc.o(i.ADC_StartCalibration), (60 bytes).
+    Removing at32f4xx_adc.o(i.ADC_StructInit), (18 bytes).
+    Removing at32f4xx_adc.o(i.ADC_TempSensorVrefintCtrl), (56 bytes).
+    Removing at32f4xx_adc.o(.conststring), (67 bytes).
+    Removing at32f4xx_bkp.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_bkp.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_bkp.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_ClearFlag), (16 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_ClearIntPendingBit), (16 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_GetFlagStatus), (12 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_GetIntStatus), (12 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_IntConfig), (36 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_RTCOutputConfig), (68 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_ReadBackupReg), (204 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_Reset), (18 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_SetRTCCalValue), (40 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_TamperPinCmd), (36 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_TamperPinLvConfig), (36 bytes).
+    Removing at32f4xx_bkp.o(i.BKP_WriteBackupReg), (208 bytes).
+    Removing at32f4xx_bkp.o(.conststring), (67 bytes).
+    Removing at32f4xx_can.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_can.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_can.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_can.o(i.CAN_CancelTransmit), (96 bytes).
+    Removing at32f4xx_can.o(i.CAN_ClearFlag), (180 bytes).
+    Removing at32f4xx_can.o(i.CAN_ClearINTPendingBit), (248 bytes).
+    Removing at32f4xx_can.o(i.CAN_DBGFreeze), (80 bytes).
+    Removing at32f4xx_can.o(i.CAN_FIFORelease), (80 bytes).
+    Removing at32f4xx_can.o(i.CAN_FilterInit), (348 bytes).
+    Removing at32f4xx_can.o(i.CAN_GetFlagStatus), (256 bytes).
+    Removing at32f4xx_can.o(i.CAN_GetINTStatus), (388 bytes).
+    Removing at32f4xx_can.o(i.CAN_GetLSBTransmitErrorCounter), (48 bytes).
+    Removing at32f4xx_can.o(i.CAN_GetLastErrorCode), (48 bytes).
+    Removing at32f4xx_can.o(i.CAN_GetReceiveErrorCounter), (44 bytes).
+    Removing at32f4xx_can.o(i.CAN_INTConfig), (156 bytes).
+    Removing at32f4xx_can.o(i.CAN_Init), (488 bytes).
+    Removing at32f4xx_can.o(i.CAN_MessagePending), (84 bytes).
+    Removing at32f4xx_can.o(i.CAN_OperatingModeRequest), (216 bytes).
+    Removing at32f4xx_can.o(i.CAN_Receive), (184 bytes).
+    Removing at32f4xx_can.o(i.CAN_Reset), (64 bytes).
+    Removing at32f4xx_can.o(i.CAN_SlaveStartBank), (68 bytes).
+    Removing at32f4xx_can.o(i.CAN_Sleep), (68 bytes).
+    Removing at32f4xx_can.o(i.CAN_StructInit), (32 bytes).
+    Removing at32f4xx_can.o(i.CAN_TTComModeCtrl), (152 bytes).
+    Removing at32f4xx_can.o(i.CAN_Transmit), (312 bytes).
+    Removing at32f4xx_can.o(i.CAN_TransmitStatus), (188 bytes).
+    Removing at32f4xx_can.o(i.CAN_WakeUp), (80 bytes).
+    Removing at32f4xx_can.o(i.CheckINTStatus), (12 bytes).
+    Removing at32f4xx_can.o(.conststring), (67 bytes).
+    Removing at32f4xx_crc.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_crc.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_crc.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_crc.o(i.CRC_CalculateBlkCRC), (28 bytes).
+    Removing at32f4xx_crc.o(i.CRC_CalculateCRC), (12 bytes).
+    Removing at32f4xx_crc.o(i.CRC_GetCRC), (12 bytes).
+    Removing at32f4xx_crc.o(i.CRC_GetIDTReg), (12 bytes).
+    Removing at32f4xx_crc.o(i.CRC_ResetDT), (12 bytes).
+    Removing at32f4xx_crc.o(i.CRC_SetIDTReg), (12 bytes).
+    Removing at32f4xx_dac.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_dac.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_dac.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_dac.o(i.DAC_Ctrl), (68 bytes).
+    Removing at32f4xx_dac.o(i.DAC_DMACtrl), (68 bytes).
+    Removing at32f4xx_dac.o(i.DAC_DualSoftwareTriggerCtrl), (52 bytes).
+    Removing at32f4xx_dac.o(i.DAC_GetDataOutputValue), (52 bytes).
+    Removing at32f4xx_dac.o(i.DAC_Init), (208 bytes).
+    Removing at32f4xx_dac.o(i.DAC_Reset), (24 bytes).
+    Removing at32f4xx_dac.o(i.DAC_SetChannel1Data), (72 bytes).
+    Removing at32f4xx_dac.o(i.DAC_SetChannel2Data), (72 bytes).
+    Removing at32f4xx_dac.o(i.DAC_SetDualChannelData), (96 bytes).
+    Removing at32f4xx_dac.o(i.DAC_SoftwareTriggerCtrl), (72 bytes).
+    Removing at32f4xx_dac.o(i.DAC_StructInit), (12 bytes).
+    Removing at32f4xx_dac.o(i.DAC_WaveGenerationCtrl), (92 bytes).
+    Removing at32f4xx_dac.o(.conststring), (67 bytes).
+    Removing at32f4xx_dbgmcu.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_dbgmcu.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_dbgmcu.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_dbgmcu.o(i.MCUDBG_GetDevID), (16 bytes).
+    Removing at32f4xx_dbgmcu.o(i.MCUDBG_GetRevID), (12 bytes).
+    Removing at32f4xx_dbgmcu.o(i.MCUDBG_PeriphDebugModeConfig), (68 bytes).
+    Removing at32f4xx_dbgmcu.o(.conststring), (70 bytes).
+    Removing at32f4xx_dma.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_dma.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_dma.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_dma.o(i.DMA_ChannelEnable), (160 bytes).
+    Removing at32f4xx_dma.o(i.DMA_ClearFlag), (60 bytes).
+    Removing at32f4xx_dma.o(i.DMA_ClearITPendingBit), (60 bytes).
+    Removing at32f4xx_dma.o(i.DMA_DefaultInitParaConfig), (26 bytes).
+    Removing at32f4xx_dma.o(i.DMA_Flexible_Config), (556 bytes).
+    Removing at32f4xx_dma.o(i.DMA_GetCurrDataCounter), (124 bytes).
+    Removing at32f4xx_dma.o(i.DMA_GetFlagStatus), (388 bytes).
+    Removing at32f4xx_dma.o(i.DMA_GetITStatus), (388 bytes).
+    Removing at32f4xx_dma.o(i.DMA_INTConfig), (176 bytes).
+    Removing at32f4xx_dma.o(i.DMA_Init), (356 bytes).
+    Removing at32f4xx_dma.o(i.DMA_Reset), (348 bytes).
+    Removing at32f4xx_dma.o(i.DMA_SetCurrDataCounter), (124 bytes).
+    Removing at32f4xx_dma.o(.conststring), (67 bytes).
+    Removing at32f4xx_exti.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_exti.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_exti.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_exti.o(i.EXTI_ClearFlag), (32 bytes).
+    Removing at32f4xx_exti.o(i.EXTI_GenerateSWInt), (36 bytes).
+    Removing at32f4xx_exti.o(i.EXTI_GetFlagStatus), (140 bytes).
+    Removing at32f4xx_exti.o(i.EXTI_GetIntStatus), (152 bytes).
+    Removing at32f4xx_exti.o(i.EXTI_Reset), (36 bytes).
+    Removing at32f4xx_flash.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_flash.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_flash.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_Bank3EncEndAddrConfig), (140 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_BootOptConfig), (116 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ClearFlag), (60 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EnableWriteProtect), (192 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EraseAllPages), (88 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EraseBank1AllPages), (56 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EraseBank2AllPages), (56 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EraseBank3AllPages), (64 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ErasePage), (224 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_EraseUserOptionBytes), (136 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetBank1Status), (40 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetBank2Status), (40 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetBank3Status), (44 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetFlagStatus), (164 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetReadProtectStatus), (20 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetSlibCurCnt), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetSlibDataStartPage), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetSlibEndPage), (12 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetSlibStartPage), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetSlibState), (20 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetStatus), (40 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetUserOptionByte), (12 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_GetWriteProtectStatus), (12 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_INTConfig), (128 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_Lock), (24 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_LockBank1), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_LockBank2), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_LockBank3), (16 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ProgramByte), (164 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ProgramHalfWord), (200 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ProgramUserOptionByteData), (72 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ProgramWord), (204 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_ReadProtectConfig), (156 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_SlibDisable), (68 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_SlibMainEnable), (196 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_Unlock), (28 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_UnlockBank1), (24 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_UnlockBank2), (24 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_UnlockBank3), (24 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_UserOptionByteConfig), (144 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_WaitForBank1Process), (32 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_WaitForBank2Process), (32 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_WaitForBank3Process), (32 bytes).
+    Removing at32f4xx_flash.o(i.FLASH_WaitForProcess), (32 bytes).
+    Removing at32f4xx_flash.o(.conststring), (69 bytes).
+    Removing at32f4xx_gpio.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_gpio.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_gpio.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_AFIOReset), (22 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_ETH_MediaInterfaceConfig), (36 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_EventOutputCmd), (36 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_EventOutputConfig), (136 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_PinsLockConfig), (100 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_PinsRemapConfig), (1384 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_ReadInputDataBit), (176 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_ReadOutputData), (76 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_ReadOutputDataBit), (176 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_Reset), (196 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_ResetBits), (88 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_SetBits), (88 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_Write), (76 bytes).
+    Removing at32f4xx_gpio.o(i.GPIO_WriteBit), (188 bytes).
+    Removing at32f4xx_i2c.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_i2c.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_i2c.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_ARPCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_AcknowledgeConfig), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_CalculatePEC), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_CheckEvent), (236 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_ClearFlag), (76 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_ClearITPendingBit), (76 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_Cmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_DMACmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_DMALastTransferCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_DeInit), (100 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_DualAddressCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_FastModeDutyCycleConfig), (100 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GeneralCallCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GenerateSTART), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GenerateSTOP), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GetFlagStatus), (276 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GetINTStatus), (212 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GetLastEvent), (64 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_GetPEC), (56 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_INTConfig), (104 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_Init), (352 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_NACKPositionConfig), (100 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_OwnAddress2Config), (68 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_PECPositionConfig), (100 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_ReadRegister), (112 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_ReceiveData), (56 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_SMBusAlertConfig), (100 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_Send7bitAddress), (84 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_SendData), (56 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_SoftwareResetCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_StretchClockCmd), (88 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_StructInit), (28 bytes).
+    Removing at32f4xx_i2c.o(i.I2C_TransmitPEC), (88 bytes).
+    Removing at32f4xx_i2c.o(.conststring), (67 bytes).
+    Removing at32f4xx_iwdg.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_iwdg.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_iwdg.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_Enable), (16 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_GetFlagStatus), (44 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_KeyRegWrite), (36 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_ReloadCounter), (16 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_SetPrescaler), (56 bytes).
+    Removing at32f4xx_iwdg.o(i.IWDG_SetReload), (32 bytes).
+    Removing at32f4xx_iwdg.o(.conststring), (68 bytes).
+    Removing at32f4xx_pwr.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_pwr.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_pwr.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_BackupAccessCtrl), (36 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_ClearFlag), (44 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_EnterSTANDBYMode), (40 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_EnterSTOPMode), (100 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_EnterSleepMode), (56 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_GetFlagStatus), (52 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_PVDCtrl), (36 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_PVDLevelConfig), (68 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_Reset), (24 bytes).
+    Removing at32f4xx_pwr.o(i.PWR_WakeUpPinCtrl), (36 bytes).
+    Removing at32f4xx_pwr.o(.conststring), (67 bytes).
+    Removing at32f4xx_rcc.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_rcc.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_rcc.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_ADCCLKConfig), (80 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_AHBCLKConfig), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_AHBPeriphClockCmd), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_AHBPeriphResetCmd), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_APB1CLKConfig), (64 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_APB1PeriphResetCmd), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_APB2CLKConfig), (68 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_BackupResetCmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_ClearFlag), (16 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_ClearINTPendingBit), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_GetClocksFreq), (256 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_GetFlagStatus), (108 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_GetINTStatus), (64 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_GetSYSCLKSelction), (16 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSEClockFailureDetectorCmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSEConfig), (84 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSEDivConfig), (64 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSEENDelay), (12 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSI2USB48M), (72 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_HSICmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_INTConfig), (68 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_LSEConfig), (68 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_LSICmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_MCO2TMR10), (56 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_PLLCmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_PLLConfig), (104 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_RTCCLKCmd), (36 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_RTCCLKConfig), (52 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_Reset), (76 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_SYSCLKConfig), (48 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_SetHSICalibValue), (32 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_SetHSITweakValue), (44 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_USBCLKConfig), (76 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_USBINTRemap), (56 bytes).
+    Removing at32f4xx_rcc.o(i.RCC_WaitForHSEStable), (56 bytes).
+    Removing at32f4xx_rcc.o(.data), (16 bytes).
+    Removing at32f4xx_rtc.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_rtc.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_rtc.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_ClearFlag), (40 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_ClearINTPendingBit), (40 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_EnterConfigMode), (16 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_ExitConfigMode), (16 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_GetCounter), (20 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_GetDivider), (24 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_GetFlagStatus), (56 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_GetINTStatus), (64 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_INTConfig), (64 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_SetAlarmValue), (32 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_SetCounter), (32 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_SetDIV), (52 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_WaitForLastTask), (16 bytes).
+    Removing at32f4xx_rtc.o(i.RTC_WaitForSynchro), (24 bytes).
+    Removing at32f4xx_rtc.o(.conststring), (67 bytes).
+    Removing at32f4xx_sdio.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_sdio.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_sdio.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_ATAINTCmd), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_ClearFlag), (68 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_ClearINTPendingBit), (68 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_ClockCmd), (76 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_CmdStructInit), (14 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_CommandCompletionCmd), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_DMACmd), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_DataConfig), (216 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_DataStructInit), (20 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetBUFCount), (44 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetCommandResponse), (44 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetDataCounter), (44 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetFlagStatus), (192 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetINTStatus), (192 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetPowerSaveState), (48 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_GetResponse), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_INTConfig), (92 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_Init), (184 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_ReadData), (44 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_Reset), (64 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SendATACmd), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SendCommand), (156 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SendSDIOSuspendCmd), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SetPowerSaveState), (68 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SetSDIOOperation), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_SetSDIOReadWaitMode), (72 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_StartSDIOReadWait), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_StopSDIOReadWait), (80 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_StructInit), (16 bytes).
+    Removing at32f4xx_sdio.o(i.SDIO_WriteData), (48 bytes).
+    Removing at32f4xx_sdio.o(.conststring), (68 bytes).
+    Removing at32f4xx_spi.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_spi.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_spi.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_spi.o(i.I2S_DefaultInit), (18 bytes).
+    Removing at32f4xx_spi.o(i.I2S_Enable), (116 bytes).
+    Removing at32f4xx_spi.o(i.I2S_Init), (420 bytes).
+    Removing at32f4xx_spi.o(i.SPI_CRCEN), (116 bytes).
+    Removing at32f4xx_spi.o(i.SPI_DefaultInitParaConfig), (24 bytes).
+    Removing at32f4xx_spi.o(i.SPI_Enable), (116 bytes).
+    Removing at32f4xx_spi.o(i.SPI_FrameSizeConfig), (112 bytes).
+    Removing at32f4xx_spi.o(i.SPI_GetCRC), (104 bytes).
+    Removing at32f4xx_spi.o(i.SPI_GetCRCPolynomial), (80 bytes).
+    Removing at32f4xx_spi.o(i.SPI_HalfDuplexTransModeConfig), (128 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_ClearFlag), (96 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_ClearINTPendingBit), (104 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_DMAEnable), (128 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_GetFlagStatus), (132 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_GetITStatus), (152 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_INTConfig), (144 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_Reset), (184 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_RxData), (80 bytes).
+    Removing at32f4xx_spi.o(i.SPI_I2S_TxData), (80 bytes).
+    Removing at32f4xx_spi.o(i.SPI_Init), (356 bytes).
+    Removing at32f4xx_spi.o(i.SPI_NSSHardwareOutputEnable), (116 bytes).
+    Removing at32f4xx_spi.o(i.SPI_NSSInternalSoftwareConfig), (124 bytes).
+    Removing at32f4xx_spi.o(i.SPI_TxCRC), (84 bytes).
+    Removing at32f4xx_spi.o(.conststring), (67 bytes).
+    Removing at32f4xx_tim.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_tim.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_tim.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_tim.o(i.TI1_Config), (116 bytes).
+    Removing at32f4xx_tim.o(i.TI2_Config), (124 bytes).
+    Removing at32f4xx_tim.o(i.TI3_Config), (120 bytes).
+    Removing at32f4xx_tim.o(i.TI4_Config), (124 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ARPreloadConfig), (196 bytes).
+    Removing at32f4xx_tim.o(i.TMR_BRKDTConfig), (204 bytes).
+    Removing at32f4xx_tim.o(i.TMR_BRKDTStructInit), (18 bytes).
+    Removing at32f4xx_tim.o(i.TMR_CCPreloadControl), (116 bytes).
+    Removing at32f4xx_tim.o(i.TMR_CCxCmd), (200 bytes).
+    Removing at32f4xx_tim.o(i.TMR_CCxNCmd), (100 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearFlag), (180 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearITPendingBit), (180 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearOC1Ref), (104 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearOC2Ref), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearOC3Ref), (104 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ClearOC4Ref), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_Cmd), (196 bytes).
+    Removing at32f4xx_tim.o(i.TMR_CounterModeConfig), (116 bytes).
+    Removing at32f4xx_tim.o(i.TMR_CtrlPWMOutputs), (84 bytes).
+    Removing at32f4xx_tim.o(i.TMR_DIVConfig), (180 bytes).
+    Removing at32f4xx_tim.o(i.TMR_DMACmd), (152 bytes).
+    Removing at32f4xx_tim.o(i.TMR_DMAConfig), (284 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ETRClockMode1Config), (180 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ETRClockMode2Config), (168 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ETRConfig), (168 bytes).
+    Removing at32f4xx_tim.o(i.TMR_EncoderInterfaceConfig), (188 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ForcedOC1Config), (168 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ForcedOC2Config), (136 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ForcedOC3Config), (108 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ForcedOC4Config), (116 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GenerateEvent), (176 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetCapture1), (140 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetCapture2), (100 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetCapture3), (80 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetCapture4), (80 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetCounter), (160 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetDIV), (160 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetFlagStatus), (236 bytes).
+    Removing at32f4xx_tim.o(i.TMR_GetINTStatus), (220 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ICInit), (524 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ICStructInit), (16 bytes).
+    Removing at32f4xx_tim.o(i.TMR_INTConfig), (208 bytes).
+    Removing at32f4xx_tim.o(i.TMR_ITRxExternalClockConfig), (140 bytes).
+    Removing at32f4xx_tim.o(i.TMR_InternalClockConfig), (104 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC1FastConfig), (164 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC1Init), (372 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC1NPolarityConfig), (68 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC1PolarityConfig), (164 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC1PreloadConfig), (164 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC2FastConfig), (132 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC2Init), (364 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC2NPolarityConfig), (76 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC2PolarityConfig), (132 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC2PreloadConfig), (132 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC3FastConfig), (104 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC3Init), (340 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC3NPolarityConfig), (76 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC3PolarityConfig), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC3PreloadConfig), (104 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC4FastConfig), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC4Init), (256 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC4PolarityConfig), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OC4PreloadConfig), (112 bytes).
+    Removing at32f4xx_tim.o(i.TMR_OCStructInit), (20 bytes).
+    Removing at32f4xx_tim.o(i.TMR_PWMIConfig), (200 bytes).
+    Removing at32f4xx_tim.o(i.TMR_Reset), (368 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectCCDMA), (116 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectHALL), (80 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectHallSensor), (136 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectInputTrigger), (148 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectMasterSlaveMode), (128 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectOCxM), (276 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectOnePulseMode), (188 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectOutputTrigger), (172 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectPlusMode), (100 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SelectSlaveMode), (140 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetAutoreload), (160 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetClockDivision), (176 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetCompare1), (140 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetCompare2), (100 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetCompare3), (80 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetCompare4), (80 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetCounter), (160 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetIC1DIV), (176 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetIC2DIV), (144 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetIC3DIV), (116 bytes).
+    Removing at32f4xx_tim.o(i.TMR_SetIC4DIV), (124 bytes).
+    Removing at32f4xx_tim.o(i.TMR_TIxExternalClockConfig), (204 bytes).
+    Removing at32f4xx_tim.o(i.TMR_TimeBaseInit), (276 bytes).
+    Removing at32f4xx_tim.o(i.TMR_TimeBaseStructInit), (18 bytes).
+    Removing at32f4xx_tim.o(i.TMR_UpdateDisableConfig), (196 bytes).
+    Removing at32f4xx_tim.o(i.TMR_UpdateRequestConfig), (196 bytes).
+    Removing at32f4xx_tim.o(.conststring), (67 bytes).
+    Removing at32f4xx_usart.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_usart.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_usart.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_usart.o(i.USART_ClearFlag), (128 bytes).
+    Removing at32f4xx_usart.o(i.USART_ClearITPendingBit), (160 bytes).
+    Removing at32f4xx_usart.o(i.USART_ClockInit), (160 bytes).
+    Removing at32f4xx_usart.o(i.USART_ClockStructInit), (12 bytes).
+    Removing at32f4xx_usart.o(i.USART_Cmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_DMACmd), (124 bytes).
+    Removing at32f4xx_usart.o(i.USART_GetFlagStatus), (176 bytes).
+    Removing at32f4xx_usart.o(i.USART_GetITStatus), (244 bytes).
+    Removing at32f4xx_usart.o(i.USART_HalfDuplexCmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_INTConfig), (240 bytes).
+    Removing at32f4xx_usart.o(i.USART_Init), (416 bytes).
+    Removing at32f4xx_usart.o(i.USART_IrDACmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_IrDAConfig), (104 bytes).
+    Removing at32f4xx_usart.o(i.USART_LINBreakDetectLengthConfig), (104 bytes).
+    Removing at32f4xx_usart.o(i.USART_LINCmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_OneBitMethodCmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_OverSampling8Cmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_ReceiveData), (76 bytes).
+    Removing at32f4xx_usart.o(i.USART_ReceiverWakeUpCmd), (108 bytes).
+    Removing at32f4xx_usart.o(i.USART_Reset), (208 bytes).
+    Removing at32f4xx_usart.o(i.USART_SendBreak), (80 bytes).
+    Removing at32f4xx_usart.o(i.USART_SendData), (96 bytes).
+    Removing at32f4xx_usart.o(i.USART_SetAddress), (100 bytes).
+    Removing at32f4xx_usart.o(i.USART_SetGuardTime), (68 bytes).
+    Removing at32f4xx_usart.o(i.USART_SetPrescaler), (88 bytes).
+    Removing at32f4xx_usart.o(i.USART_SmartCardCmd), (88 bytes).
+    Removing at32f4xx_usart.o(i.USART_SmartCardNACKCmd), (88 bytes).
+    Removing at32f4xx_usart.o(i.USART_StructInit), (22 bytes).
+    Removing at32f4xx_usart.o(i.USART_WakeUpConfig), (104 bytes).
+    Removing at32f4xx_usart.o(.conststring), (69 bytes).
+    Removing at32f4xx_wwdg.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_wwdg.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_wwdg.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_ClearFlag), (12 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_Enable), (40 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_EnableINT), (12 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_GetFlagStatus), (12 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_Reset), (24 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_SetCounter), (40 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_SetPrescaler), (56 bytes).
+    Removing at32f4xx_wwdg.o(i.WWDG_SetWindowCounter), (56 bytes).
+    Removing at32f4xx_wwdg.o(.conststring), (68 bytes).
+    Removing at32f4xx_xmc.o(.rev16_text), (4 bytes).
+    Removing at32f4xx_xmc.o(.revsh_text), (4 bytes).
+    Removing at32f4xx_xmc.o(.rrx_text), (6 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_ClearFlag), (96 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_ClearINTPendingBit), (104 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_ExtTimingConfig), (68 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_GetECC), (18 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_GetFlagStatus), (108 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_GetINTStatus), (112 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_INTConfig), (156 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NANDCmd), (108 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NANDECCCmd), (108 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NANDInit), (408 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NANDReset), (64 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NANDStructInit), (54 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NORSRAMCmd), (84 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NORSRAMInit), (696 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NORSRAMReset), (80 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_NORSRAMStructInit), (98 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_PCCARDCmd), (60 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_PCCARDInit), (376 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_PCCARDReset), (28 bytes).
+    Removing at32f4xx_xmc.o(i.XMC_PCCARDStructInit), (60 bytes).
+    Removing at32f4xx_xmc.o(.conststring), (67 bytes).
+    Removing misc.o(.rev16_text), (4 bytes).
+    Removing misc.o(.revsh_text), (4 bytes).
+    Removing misc.o(.rrx_text), (6 bytes).
+    Removing misc.o(i.NVIC_PriorityGroupConfig), (120 bytes).
+    Removing misc.o(i.NVIC_SetVectorTable), (124 bytes).
+    Removing misc.o(i.NVIC_SystemLPConfig), (124 bytes).
+
+580 unused section(s) (total 55163 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_adc.c 0x00000000   Number         0  at32f4xx_adc.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_bkp.c 0x00000000   Number         0  at32f4xx_bkp.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_can.c 0x00000000   Number         0  at32f4xx_can.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_crc.c 0x00000000   Number         0  at32f4xx_crc.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dac.c 0x00000000   Number         0  at32f4xx_dac.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dbgmcu.c 0x00000000   Number         0  at32f4xx_dbgmcu.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_dma.c 0x00000000   Number         0  at32f4xx_dma.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_exti.c 0x00000000   Number         0  at32f4xx_exti.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_flash.c 0x00000000   Number         0  at32f4xx_flash.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_gpio.c 0x00000000   Number         0  at32f4xx_gpio.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_i2c.c 0x00000000   Number         0  at32f4xx_i2c.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_iwdg.c 0x00000000   Number         0  at32f4xx_iwdg.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_pwr.c 0x00000000   Number         0  at32f4xx_pwr.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rcc.c 0x00000000   Number         0  at32f4xx_rcc.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_rtc.c 0x00000000   Number         0  at32f4xx_rtc.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_sdio.c 0x00000000   Number         0  at32f4xx_sdio.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_spi.c 0x00000000   Number         0  at32f4xx_spi.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_tim.c 0x00000000   Number         0  at32f4xx_tim.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_usart.c 0x00000000   Number         0  at32f4xx_usart.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_wwdg.c 0x00000000   Number         0  at32f4xx_wwdg.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\at32f4xx_xmc.c 0x00000000   Number         0  at32f4xx_xmc.o ABSOLUTE
+    ..\..\..\..\Libraries\AT32F4xx_StdPeriph_Driver\src\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
+    ..\..\..\..\Libraries\CMSIS\CM4\DeviceSupport\startup\mdk\startup_at32f407vgt7.s 0x00000000   Number         0  startup_at32f407vgt7.o ABSOLUTE
+    ..\..\..\AT32_Board\at32_board.c         0x00000000   Number         0  at32_board.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_adc.c 0x00000000   Number         0  at32f4xx_adc.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_bkp.c 0x00000000   Number         0  at32f4xx_bkp.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_can.c 0x00000000   Number         0  at32f4xx_can.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_crc.c 0x00000000   Number         0  at32f4xx_crc.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_dac.c 0x00000000   Number         0  at32f4xx_dac.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_dbgmcu.c 0x00000000   Number         0  at32f4xx_dbgmcu.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_dma.c 0x00000000   Number         0  at32f4xx_dma.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_exti.c 0x00000000   Number         0  at32f4xx_exti.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_flash.c 0x00000000   Number         0  at32f4xx_flash.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_gpio.c 0x00000000   Number         0  at32f4xx_gpio.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_i2c.c 0x00000000   Number         0  at32f4xx_i2c.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_iwdg.c 0x00000000   Number         0  at32f4xx_iwdg.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_pwr.c 0x00000000   Number         0  at32f4xx_pwr.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_rcc.c 0x00000000   Number         0  at32f4xx_rcc.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_rtc.c 0x00000000   Number         0  at32f4xx_rtc.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_sdio.c 0x00000000   Number         0  at32f4xx_sdio.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_spi.c 0x00000000   Number         0  at32f4xx_spi.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_tim.c 0x00000000   Number         0  at32f4xx_tim.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_usart.c 0x00000000   Number         0  at32f4xx_usart.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_wwdg.c 0x00000000   Number         0  at32f4xx_wwdg.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\at32f4xx_xmc.c 0x00000000   Number         0  at32f4xx_xmc.o ABSOLUTE
+    ..\\..\\..\\..\\Libraries\\AT32F4xx_StdPeriph_Driver\\src\\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
+    ..\\..\\..\\AT32_Board\\at32_board.c     0x00000000   Number         0  at32_board.o ABSOLUTE
+    ..\\at32f4xx_it.c                        0x00000000   Number         0  at32f4xx_it.o ABSOLUTE
+    ..\\main.c                               0x00000000   Number         0  main.o ABSOLUTE
+    ..\\system_at32f4xx.c                    0x00000000   Number         0  system_at32f4xx.o ABSOLUTE
+    ..\at32f4xx_it.c                         0x00000000   Number         0  at32f4xx_it.o ABSOLUTE
+    ..\main.c                                0x00000000   Number         0  main.o ABSOLUTE
+    ..\system_at32f4xx.c                     0x00000000   Number         0  system_at32f4xx.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x08000000   Section      388  startup_at32f407vgt7.o(RESET)
+    .ARM.Collect$$$$00000000                 0x08000184   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x08000184   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x08000188   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0800018c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0800018c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0800018c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x08000194   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x08000194   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x08000194   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x08000194   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000198   Section       36  startup_at32f407vgt7.o(.text)
+    $v0                                      0x08000198   Number         0  startup_at32f407vgt7.o(.text)
+    .text                                    0x080001bc   Section       36  init.o(.text)
+    i.AT32_BUTTON_Init                       0x080001e0   Section        0  at32_board.o(i.AT32_BUTTON_Init)
+    i.AT32_Board_Init                        0x0800021c   Section        0  at32_board.o(i.AT32_Board_Init)
+    i.AT32_LEDn_Init                         0x08000258   Section        0  at32_board.o(i.AT32_LEDn_Init)
+    i.AT32_LEDn_OFF                          0x0800029c   Section        0  at32_board.o(i.AT32_LEDn_OFF)
+    i.AT32_LEDn_Toggle                       0x080002bc   Section        0  at32_board.o(i.AT32_LEDn_Toggle)
+    i.BUTTON_EXTI_Init                       0x080002e0   Section        0  main.o(i.BUTTON_EXTI_Init)
+    i.BusFault_Handler                       0x0800033c   Section        0  at32f4xx_it.o(i.BusFault_Handler)
+    i.DebugMon_Handler                       0x0800033e   Section        0  at32f4xx_it.o(i.DebugMon_Handler)
+    i.Delay_init                             0x08000340   Section        0  at32_board.o(i.Delay_init)
+    i.Delay_ms                               0x08000384   Section        0  at32_board.o(i.Delay_ms)
+    i.EXTI0_IRQHandler                       0x080003fc   Section        0  main.o(i.EXTI0_IRQHandler)
+    i.EXTI15_10_IRQHandler                   0x08000448   Section        0  main.o(i.EXTI15_10_IRQHandler)
+    i.EXTI_ClearIntPendingBit                0x08000494   Section        0  at32f4xx_exti.o(i.EXTI_ClearIntPendingBit)
+    i.EXTI_Init                              0x080004b4   Section        0  at32f4xx_exti.o(i.EXTI_Init)
+    i.EXTI_StructInit                        0x08000574   Section        0  at32f4xx_exti.o(i.EXTI_StructInit)
+    i.GPIO_EXTILineConfig                    0x08000584   Section        0  at32f4xx_gpio.o(i.GPIO_EXTILineConfig)
+    i.GPIO_Init                              0x08000620   Section        0  at32f4xx_gpio.o(i.GPIO_Init)
+    i.GPIO_ReadInputData                     0x08000750   Section        0  at32f4xx_gpio.o(i.GPIO_ReadInputData)
+    i.GPIO_StructInit                        0x0800079c   Section        0  at32f4xx_gpio.o(i.GPIO_StructInit)
+    i.HardFault_Handler                      0x080007ac   Section        0  at32f4xx_it.o(i.HardFault_Handler)
+    i.MCO_Config                             0x080007b0   Section        0  main.o(i.MCO_Config)
+    i.MemManage_Handler                      0x080007e8   Section        0  at32f4xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x080007ea   Section        0  at32f4xx_it.o(i.NMI_Handler)
+    i.NVIC_Init                              0x080007ec   Section        0  misc.o(i.NVIC_Init)
+    i.PendSV_Handler                         0x080008bc   Section        0  at32f4xx_it.o(i.PendSV_Handler)
+    i.RCC_APB2PeriphClockCmd                 0x080008c0   Section        0  at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.RCC_CLKOUTConfig                       0x08000908   Section        0  at32f4xx_rcc.o(i.RCC_CLKOUTConfig)
+    i.RCC_StepModeCmd                        0x080009ec   Section        0  at32f4xx_rcc.o(i.RCC_StepModeCmd)
+    i.SVC_Handler                            0x08000a24   Section        0  at32f4xx_it.o(i.SVC_Handler)
+    i.SetSysClock                            0x08000a26   Section        0  system_at32f4xx.o(i.SetSysClock)
+    SetSysClock                              0x08000a27   Thumb Code     4  system_at32f4xx.o(i.SetSysClock)
+    i.SetSysClockTo240M                      0x08000a2c   Section        0  system_at32f4xx.o(i.SetSysClockTo240M)
+    SetSysClockTo240M                        0x08000a2d   Thumb Code   176  system_at32f4xx.o(i.SetSysClockTo240M)
+    i.SysTick_CLKSourceConfig                0x08000ae8   Section        0  misc.o(i.SysTick_CLKSourceConfig)
+    i.SysTick_Handler                        0x08000b54   Section        0  at32f4xx_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x08000b58   Section        0  system_at32f4xx.o(i.SystemInit)
+    i.UsageFault_Handler                     0x08000bc4   Section        0  at32f4xx_it.o(i.UsageFault_Handler)
+    i.__scatterload_copy                     0x08000bc6   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08000bd4   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08000bd6   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.assert_failed                          0x08000be4   Section        0  main.o(i.assert_failed)
+    i.main                                   0x08000be8   Section        0  main.o(i.main)
+    .conststring                             0x08000c40   Section       68  at32f4xx_exti.o(.conststring)
+    .conststring                             0x08000c84   Section       68  at32f4xx_gpio.o(.conststring)
+    .conststring                             0x08000cc8   Section       67  at32f4xx_rcc.o(.conststring)
+    .data                                    0x20000000   Section       14  main.o(.data)
+    .data                                    0x20000010   Section       72  at32_board.o(.data)
+    Pressed                                  0x20000010   Data           1  at32_board.o(.data)
+    fac_us                                   0x20000018   Data           4  at32_board.o(.data)
+    fac_ms                                   0x2000001c   Data           4  at32_board.o(.data)
+    .data                                    0x20000058   Section       20  system_at32f4xx.o(.data)
+    STACK                                    0x20000070   Section     1024  startup_at32f407vgt7.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x00000184   Number         0  startup_at32f407vgt7.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_at32f407vgt7.o(RESET)
+    __Vectors_End                            0x08000184   Data           0  startup_at32f407vgt7.o(RESET)
+    __main                                   0x08000185   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x08000185   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x08000189   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0800018d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0800018d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0800018d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0800018d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x08000195   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x08000195   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x08000199   Thumb Code     8  startup_at32f407vgt7.o(.text)
+    ACC_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    ADC1_2_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    ADC3_IRQHandler                          0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN1_RX1_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN1_SCE_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN2_RX0_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN2_RX1_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN2_SCE_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    CAN2_TX_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel1_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel2_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel3_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel4_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel5_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel6_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA1_Channel7_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA2_Channel1_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA2_Channel2_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA2_Channel3_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA2_Channel4_5_IRQHandler               0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    DMA2_Channel6_7_IRQHandler               0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    ETH_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    ETH_WKUP_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    EXTI1_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    EXTI2_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    EXTI3_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    EXTI4_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    EXTI9_5_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    FLASH_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C1_ER_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C1_EV_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C2_ER_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C2_EV_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C3_ER_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    I2C3_EV_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    PVD_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    RCC_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    RTCAlarm_IRQHandler                      0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    RTC_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SDIO1_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SDIO2_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SPI1_IRQHandler                          0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SPI2_I2S2EXT_IRQHandler                  0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SPI3_I2S3EXT_IRQHandler                  0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    SPI4_IRQHandler                          0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TAMPER_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR1_BRK_TMR9_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR1_CC_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR1_OV_TMR10_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR1_TRG_COM_TMR11_IRQHandler            0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR2_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR3_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR4_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR5_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR6_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR7_GLOBAL_IRQHandler                   0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR8_BRK_TMR12_IRQHandler                0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR8_CC_IRQHandler                       0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR8_OV_TMR13_IRQHandler                 0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    TMR8_TRG_COM_TMR14_IRQHandler            0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    UART4_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    UART5_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    UART7_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    UART8_IRQHandler                         0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USART1_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USART2_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USART3_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USART6_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USBWakeUp_IRQHandler                     0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USB_HP_CAN1_TX_IRQHandler                0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USB_HP_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USB_LP_CAN1_RX0_IRQHandler               0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    USB_LP_IRQHandler                        0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    WWDG_IRQHandler                          0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    XMC_IRQHandler                           0x080001b3   Thumb Code     0  startup_at32f407vgt7.o(.text)
+    __scatterload                            0x080001bd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x080001bd   Thumb Code     0  init.o(.text)
+    AT32_BUTTON_Init                         0x080001e1   Thumb Code    56  at32_board.o(i.AT32_BUTTON_Init)
+    AT32_Board_Init                          0x0800021d   Thumb Code    58  at32_board.o(i.AT32_Board_Init)
+    AT32_LEDn_Init                           0x08000259   Thumb Code    62  at32_board.o(i.AT32_LEDn_Init)
+    AT32_LEDn_OFF                            0x0800029d   Thumb Code    26  at32_board.o(i.AT32_LEDn_OFF)
+    AT32_LEDn_Toggle                         0x080002bd   Thumb Code    30  at32_board.o(i.AT32_LEDn_Toggle)
+    BUTTON_EXTI_Init                         0x080002e1   Thumb Code    88  main.o(i.BUTTON_EXTI_Init)
+    BusFault_Handler                         0x0800033d   Thumb Code     2  at32f4xx_it.o(i.BusFault_Handler)
+    DebugMon_Handler                         0x0800033f   Thumb Code     2  at32f4xx_it.o(i.DebugMon_Handler)
+    Delay_init                               0x08000341   Thumb Code    52  at32_board.o(i.Delay_init)
+    Delay_ms                                 0x08000385   Thumb Code   112  at32_board.o(i.Delay_ms)
+    EXTI0_IRQHandler                         0x080003fd   Thumb Code    64  main.o(i.EXTI0_IRQHandler)
+    EXTI15_10_IRQHandler                     0x08000449   Thumb Code    64  main.o(i.EXTI15_10_IRQHandler)
+    EXTI_ClearIntPendingBit                  0x08000495   Thumb Code    24  at32f4xx_exti.o(i.EXTI_ClearIntPendingBit)
+    EXTI_Init                                0x080004b5   Thumb Code   184  at32f4xx_exti.o(i.EXTI_Init)
+    EXTI_StructInit                          0x08000575   Thumb Code    14  at32f4xx_exti.o(i.EXTI_StructInit)
+    GPIO_EXTILineConfig                      0x08000585   Thumb Code   148  at32f4xx_gpio.o(i.GPIO_EXTILineConfig)
+    GPIO_Init                                0x08000621   Thumb Code   278  at32f4xx_gpio.o(i.GPIO_Init)
+    GPIO_ReadInputData                       0x08000751   Thumb Code    50  at32f4xx_gpio.o(i.GPIO_ReadInputData)
+    GPIO_StructInit                          0x0800079d   Thumb Code    16  at32f4xx_gpio.o(i.GPIO_StructInit)
+    HardFault_Handler                        0x080007ad   Thumb Code     2  at32f4xx_it.o(i.HardFault_Handler)
+    MCO_Config                               0x080007b1   Thumb Code    52  main.o(i.MCO_Config)
+    MemManage_Handler                        0x080007e9   Thumb Code     2  at32f4xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x080007eb   Thumb Code     2  at32f4xx_it.o(i.NMI_Handler)
+    NVIC_Init                                0x080007ed   Thumb Code   144  misc.o(i.NVIC_Init)
+    PendSV_Handler                           0x080008bd   Thumb Code     2  at32f4xx_it.o(i.PendSV_Handler)
+    RCC_APB2PeriphClockCmd                   0x080008c1   Thumb Code    60  at32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    RCC_CLKOUTConfig                         0x08000909   Thumb Code   218  at32f4xx_rcc.o(i.RCC_CLKOUTConfig)
+    RCC_StepModeCmd                          0x080009ed   Thumb Code    48  at32f4xx_rcc.o(i.RCC_StepModeCmd)
+    SVC_Handler                              0x08000a25   Thumb Code     2  at32f4xx_it.o(i.SVC_Handler)
+    SysTick_CLKSourceConfig                  0x08000ae9   Thumb Code    48  misc.o(i.SysTick_CLKSourceConfig)
+    SysTick_Handler                          0x08000b55   Thumb Code     2  at32f4xx_it.o(i.SysTick_Handler)
+    SystemInit                               0x08000b59   Thumb Code    84  system_at32f4xx.o(i.SystemInit)
+    UsageFault_Handler                       0x08000bc5   Thumb Code     2  at32f4xx_it.o(i.UsageFault_Handler)
+    __scatterload_copy                       0x08000bc7   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08000bd5   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08000bd7   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    assert_failed                            0x08000be5   Thumb Code     2  main.o(i.assert_failed)
+    main                                     0x08000be9   Thumb Code    84  main.o(i.main)
+    Region$$Table$$Base                      0x08000d0c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000d2c   Number         0  anon$$obj.o(Region$$Table)
+    gButtonType                              0x20000000   Data           1  main.o(.data)
+    gSpeed                                   0x20000001   Data           1  main.o(.data)
+    BUTTON_EXTI_SOURCE_PORT                  0x20000002   Data           2  main.o(.data)
+    BUTTON_EXTI_SOURCE_PIN                   0x20000004   Data           2  main.o(.data)
+    BUTTON_EXTI_LINE                         0x20000006   Data           4  main.o(.data)
+    BUTTON_EXTI_IRQ                          0x2000000a   Data           4  main.o(.data)
+    BUTTON_GPIO_PIN                          0x20000012   Data           4  at32_board.o(.data)
+    LED_GPIO_PIN                             0x20000020   Data           8  at32_board.o(.data)
+    BUTTON_GPIO_PORT                         0x20000028   Data           8  at32_board.o(.data)
+    BUTTON_GPIO_RCC_CLK                      0x20000030   Data           8  at32_board.o(.data)
+    LED_GPIO_PORT                            0x20000038   Data          16  at32_board.o(.data)
+    LED_GPIO_RCC_CLK                         0x20000048   Data          16  at32_board.o(.data)
+    SystemCoreClock                          0x20000058   Data           4  system_at32f4xx.o(.data)
+    AHBPscTable                              0x2000005c   Data          16  system_at32f4xx.o(.data)
+    __initial_sp                             0x20000470   Data           0  startup_at32f407vgt7.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000185
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000d98, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000d2c, Max: 0x00100000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x00000184   Data   RO          407    RESET               startup_at32f407vgt7.o
+    0x08000184   0x08000184   0x00000000   Code   RO         3744  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000184   0x08000184   0x00000004   Code   RO         3747    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000188   0x08000188   0x00000004   Code   RO         3750    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0800018c   0x0800018c   0x00000000   Code   RO         3752    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0800018c   0x0800018c   0x00000000   Code   RO         3754    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0800018c   0x0800018c   0x00000008   Code   RO         3755    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000194   0x08000194   0x00000000   Code   RO         3757    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000194   0x08000194   0x00000000   Code   RO         3759    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000194   0x08000194   0x00000004   Code   RO         3748    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000198   0x08000198   0x00000024   Code   RO          408    .text               startup_at32f407vgt7.o
+    0x080001bc   0x080001bc   0x00000024   Code   RO         3761    .text               mc_w.l(init.o)
+    0x080001e0   0x080001e0   0x0000003c   Code   RO          251    i.AT32_BUTTON_Init  at32_board.o
+    0x0800021c   0x0800021c   0x0000003a   Code   RO          254    i.AT32_Board_Init   at32_board.o
+    0x08000256   0x08000256   0x00000002   PAD
+    0x08000258   0x08000258   0x00000044   Code   RO          255    i.AT32_LEDn_Init    at32_board.o
+    0x0800029c   0x0800029c   0x00000020   Code   RO          256    i.AT32_LEDn_OFF     at32_board.o
+    0x080002bc   0x080002bc   0x00000024   Code   RO          258    i.AT32_LEDn_Toggle  at32_board.o
+    0x080002e0   0x080002e0   0x0000005c   Code   RO            4    i.BUTTON_EXTI_Init  main.o
+    0x0800033c   0x0800033c   0x00000002   Code   RO          176    i.BusFault_Handler  at32f4xx_it.o
+    0x0800033e   0x0800033e   0x00000002   Code   RO          177    i.DebugMon_Handler  at32f4xx_it.o
+    0x08000340   0x08000340   0x00000044   Code   RO          260    i.Delay_init        at32_board.o
+    0x08000384   0x08000384   0x00000078   Code   RO          261    i.Delay_ms          at32_board.o
+    0x080003fc   0x080003fc   0x0000004c   Code   RO            5    i.EXTI0_IRQHandler  main.o
+    0x08000448   0x08000448   0x0000004c   Code   RO            6    i.EXTI15_10_IRQHandler  main.o
+    0x08000494   0x08000494   0x00000020   Code   RO         1183    i.EXTI_ClearIntPendingBit  at32f4xx_exti.o
+    0x080004b4   0x080004b4   0x000000c0   Code   RO         1187    i.EXTI_Init         at32f4xx_exti.o
+    0x08000574   0x08000574   0x0000000e   Code   RO         1189    i.EXTI_StructInit   at32f4xx_exti.o
+    0x08000582   0x08000582   0x00000002   PAD
+    0x08000584   0x08000584   0x0000009c   Code   RO         1534    i.GPIO_EXTILineConfig  at32f4xx_gpio.o
+    0x08000620   0x08000620   0x00000130   Code   RO         1537    i.GPIO_Init         at32f4xx_gpio.o
+    0x08000750   0x08000750   0x0000004c   Code   RO         1540    i.GPIO_ReadInputData  at32f4xx_gpio.o
+    0x0800079c   0x0800079c   0x00000010   Code   RO         1547    i.GPIO_StructInit   at32f4xx_gpio.o
+    0x080007ac   0x080007ac   0x00000002   Code   RO          178    i.HardFault_Handler  at32f4xx_it.o
+    0x080007ae   0x080007ae   0x00000002   PAD
+    0x080007b0   0x080007b0   0x00000038   Code   RO            7    i.MCO_Config        main.o
+    0x080007e8   0x080007e8   0x00000002   Code   RO          179    i.MemManage_Handler  at32f4xx_it.o
+    0x080007ea   0x080007ea   0x00000002   Code   RO          180    i.NMI_Handler       at32f4xx_it.o
+    0x080007ec   0x080007ec   0x000000d0   Code   RO         3699    i.NVIC_Init         misc.o
+    0x080008bc   0x080008bc   0x00000002   Code   RO          181    i.PendSV_Handler    at32f4xx_it.o
+    0x080008be   0x080008be   0x00000002   PAD
+    0x080008c0   0x080008c0   0x00000048   Code   RO         2022    i.RCC_APB2PeriphClockCmd  at32f4xx_rcc.o
+    0x08000908   0x08000908   0x000000e4   Code   RO         2025    i.RCC_CLKOUTConfig  at32f4xx_rcc.o
+    0x080009ec   0x080009ec   0x00000038   Code   RO         2050    i.RCC_StepModeCmd   at32f4xx_rcc.o
+    0x08000a24   0x08000a24   0x00000002   Code   RO          182    i.SVC_Handler       at32f4xx_it.o
+    0x08000a26   0x08000a26   0x00000004   Code   RO          362    i.SetSysClock       system_at32f4xx.o
+    0x08000a2a   0x08000a2a   0x00000002   PAD
+    0x08000a2c   0x08000a2c   0x000000bc   Code   RO          363    i.SetSysClockTo240M  system_at32f4xx.o
+    0x08000ae8   0x08000ae8   0x0000006c   Code   RO         3703    i.SysTick_CLKSourceConfig  misc.o
+    0x08000b54   0x08000b54   0x00000002   Code   RO          183    i.SysTick_Handler   at32f4xx_it.o
+    0x08000b56   0x08000b56   0x00000002   PAD
+    0x08000b58   0x08000b58   0x0000006c   Code   RO          365    i.SystemInit        system_at32f4xx.o
+    0x08000bc4   0x08000bc4   0x00000002   Code   RO          184    i.UsageFault_Handler  at32f4xx_it.o
+    0x08000bc6   0x08000bc6   0x0000000e   Code   RO         3765    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000bd4   0x08000bd4   0x00000002   Code   RO         3766    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000bd6   0x08000bd6   0x0000000e   Code   RO         3767    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000be4   0x08000be4   0x00000002   Code   RO            8    i.assert_failed     main.o
+    0x08000be6   0x08000be6   0x00000002   PAD
+    0x08000be8   0x08000be8   0x00000058   Code   RO            9    i.main              main.o
+    0x08000c40   0x08000c40   0x00000044   Data   RO         1190    .conststring        at32f4xx_exti.o
+    0x08000c84   0x08000c84   0x00000044   Data   RO         1550    .conststring        at32f4xx_gpio.o
+    0x08000cc8   0x08000cc8   0x00000043   Data   RO         2054    .conststring        at32f4xx_rcc.o
+    0x08000d0b   0x08000d0b   0x00000001   PAD
+    0x08000d0c   0x08000d0c   0x00000020   Data   RO         3763    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000d2c, Size: 0x00000470, Max: 0x00038000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000d2c   0x0000000e   Data   RW           10    .data               main.o
+    0x2000000e   0x08000d3a   0x00000002   PAD
+    0x20000010   0x08000d3c   0x00000048   Data   RW          266    .data               at32_board.o
+    0x20000058   0x08000d84   0x00000014   Data   RW          366    .data               system_at32f4xx.o
+    0x2000006c   0x08000d98   0x00000004   PAD
+    0x20000070        -       0x00000400   Zero   RW          405    STACK               startup_at32f407vgt7.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       442         46          0         72          0       6468   at32_board.o
+       238         16         68          0          0       2904   at32f4xx_exti.o
+       552         60         68          0          0       4969   at32f4xx_gpio.o
+        18          0          0          0          0       4830   at32f4xx_it.o
+       356         30         67          0          0       2594   at32f4xx_rcc.o
+       390         36          0         14          0     262677   main.o
+       316        124          0          0          0       2206   misc.o
+        36          8        388          0       1024       1000   startup_at32f407vgt7.o
+       300         36          0         20          0       2667   system_at32f4xx.o
+
+    ----------------------------------------------------------------------
+      2662        356        624        108       1028     290315   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        14          0          1          2          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2748        372        624        108       1028     287387   Grand Totals
+      2748        372        624        108       1028     287387   ELF Image Totals
+      2748        372        624        108          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3372 (   3.29kB)
+    Total RW  Size (RW Data + ZI Data)              1136 (   1.11kB)
+    Total ROM Size (Code + RO Data + RW Data)       3480 (   3.40kB)
+
+==============================================================================
+

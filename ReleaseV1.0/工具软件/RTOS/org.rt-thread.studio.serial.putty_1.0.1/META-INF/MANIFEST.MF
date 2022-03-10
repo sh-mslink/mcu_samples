@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Putty
+Bundle-SymbolicName: org.rt-thread.studio.serial.putty
+Bundle-Version: 1.0.1
+Bundle-Vendor: RT-Thread
+Automatic-Module-Name: org.rt-thread.studio.serial.putty
+Eclipse-BundleShape: dir

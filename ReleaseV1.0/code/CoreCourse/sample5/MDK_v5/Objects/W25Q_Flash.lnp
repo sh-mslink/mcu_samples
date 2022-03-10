@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\at32f4xx_it.o"
+".\objects\at32_board.o"
+".\objects\system_at32f4xx.o"
+".\objects\startup_at32f407vgt7.o"
+".\objects\spi_flash.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_spi.o"
+".\objects\at32f4xx_usart.o"
+".\objects\misc.o"
+".\objects\at32f4xx_rcc.o"
+--library_type=microlib --strict --scatter ".\Objects\W25Q_Flash.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\W25Q_Flash.map" -o .\Objects\W25Q_Flash.axf

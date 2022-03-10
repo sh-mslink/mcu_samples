@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <packages/>
+  <device Dclock="10000000" Dcore="Cortex-M4" DcoreVersion="r0p1" Dendian="Little-endian" Dfamily="ARM Cortex M4" Dfpu="SP_FPU" Dmpu="MPU" Dname="ARMCM4_FP" Dvendor="ARM:82" info="ARM , 128 KB RAM, 256 KB ROM" url="http://www.keil.com/dd2/arm/armcm4_fp">
+    <package info="CMSIS (Cortex Microcontroller Software Interface Standard)" name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.7.0"/>
+  </device>
+  <toolchain Tcompiler="IAR" Toutput="exe"/>
+  <components/>
+  <apis/>
+</configuration>

@@ -1,0 +1,6 @@
+---- Reset Matches (5 in 3 files) ----
+startup_at32f407vgt7.s (Libraries\CMSIS\CM4\DeviceSupport\startup\mdk) line 36 : ; Vector Table Mapped to Address 0 at Reset
+startup_at32f407vgt7.s (Libraries\CMSIS\CM4\DeviceSupport\startup\mdk) line 43 :                 DCD     Reset_Handler                       ; Reset Handler
+startup_at32f407vgt7.s (Libraries\CMSIS\CM4\DeviceSupport\startup\mdk) line 147 : ; Reset handler
+_DEVICE_PROP in usb_core.h (Libraries\USB-FS-Device_Driver\inc) :   void (*Reset)(void);       /* Reset routine of this device */
+USB_Istr in usb_istr.c (AT32_Board\src) :     Device_Property.Reset();

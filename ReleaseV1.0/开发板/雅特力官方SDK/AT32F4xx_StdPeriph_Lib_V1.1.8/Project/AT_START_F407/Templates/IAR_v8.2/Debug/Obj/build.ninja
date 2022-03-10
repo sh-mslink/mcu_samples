@@ -1,0 +1,58 @@
+#Generating source browse information for project Template
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build at32f4xx_adc.pbi : index at32f4xx_adc.xcl
+build at32f4xx_bkp.pbi : index at32f4xx_bkp.xcl
+build at32f4xx_can.pbi : index at32f4xx_can.xcl
+build at32f4xx_crc.pbi : index at32f4xx_crc.xcl
+build at32f4xx_dac.pbi : index at32f4xx_dac.xcl
+build at32f4xx_dbgmcu.pbi : index at32f4xx_dbgmcu.xcl
+build at32f4xx_dma.pbi : index at32f4xx_dma.xcl
+build at32f4xx_exti.pbi : index at32f4xx_exti.xcl
+build at32f4xx_flash.pbi : index at32f4xx_flash.xcl
+build at32f4xx_gpio.pbi : index at32f4xx_gpio.xcl
+build at32f4xx_i2c.pbi : index at32f4xx_i2c.xcl
+build at32f4xx_iwdg.pbi : index at32f4xx_iwdg.xcl
+build at32f4xx_pwr.pbi : index at32f4xx_pwr.xcl
+build at32f4xx_rcc.pbi : index at32f4xx_rcc.xcl
+build at32f4xx_rtc.pbi : index at32f4xx_rtc.xcl
+build at32f4xx_sdio.pbi : index at32f4xx_sdio.xcl
+build at32f4xx_spi.pbi : index at32f4xx_spi.xcl
+build at32f4xx_tim.pbi : index at32f4xx_tim.xcl
+build at32f4xx_usart.pbi : index at32f4xx_usart.xcl
+build at32f4xx_wwdg.pbi : index at32f4xx_wwdg.xcl
+build at32f4xx_xmc.pbi : index at32f4xx_xmc.xcl
+build misc.pbi : index misc.xcl
+build at32_board.pbi : index at32_board.xcl
+build system_at32f4xx.pbi : index system_at32f4xx.xcl
+build at32f4xx_it.pbi : index at32f4xx_it.xcl
+build main.pbi : index main.xcl
+build Template_part0.pbi : link at32f4xx_adc.pbi at32f4xx_bkp.pbi at32f4xx_can.pbi at32f4xx_crc.pbi at32f4xx_dac.pbi
+build Template_part1.pbi : link at32f4xx_dbgmcu.pbi at32f4xx_dma.pbi at32f4xx_exti.pbi at32f4xx_flash.pbi at32f4xx_gpio.pbi
+build Template_part2.pbi : link at32f4xx_i2c.pbi at32f4xx_iwdg.pbi at32f4xx_pwr.pbi at32f4xx_rcc.pbi at32f4xx_rtc.pbi
+build Template_part3.pbi : link at32f4xx_sdio.pbi at32f4xx_spi.pbi at32f4xx_tim.pbi at32f4xx_usart.pbi at32f4xx_wwdg.pbi
+build Template_part4.pbi : link at32f4xx_xmc.pbi misc.pbi at32_board.pbi system_at32f4xx.pbi at32f4xx_it.pbi
+build Template_part5.pbi : link main.pbi
+build Template.pbd : link Template_part0.pbi Template_part1.pbi Template_part2.pbi Template_part3.pbi Template_part4.pbi Template_part5.pbi
+build Template.pbw : browsedata Template.pbd
+
+

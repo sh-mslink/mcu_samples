@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <LinkType>AT-Link</LinkType>
+  <Language>zh-CN</Language>
+  <Port>SWD</Port>
+  <Speed>4000</Speed>
+  <Address>08000000</Address>
+  <Size1>100</Size1>
+  <Bank3En>false</Bank3En>
+  <Bank3Size>
+  </Bank3Size>
+  <Bank3TypeName>
+  </Bank3TypeName>
+  <Bank3TypeValue>1</Bank3TypeValue>
+  <Bank3FLASHDA>0</Bank3FLASHDA>
+  <Bank3Remap>0</Bank3Remap>
+  <ResetMode>0</ResetMode>
+  <BitMode>0</BitMode>
+  <DownloadEraseType>
+    <DownloadEraseType>1</DownloadEraseType>
+  </DownloadEraseType>
+  <DownloadVerifyFlag>
+    <DownloadVerifyFlag>1</DownloadVerifyFlag>
+  </DownloadVerifyFlag>
+  <DownloadSNFlag>
+    <DownloadSNFlag>0</DownloadSNFlag>
+  </DownloadSNFlag>
+  <DownloadSNAddr>
+    <DownloadSNAddr>08010000</DownloadSNAddr>
+  </DownloadSNAddr>
+  <DownloadSNStep>
+    <DownloadSNStep>1</DownloadSNStep>
+  </DownloadSNStep>
+  <DownloadSNLastNum>
+    <DownloadSNLastNum>1</DownloadSNLastNum>
+  </DownloadSNLastNum>
+  <DownloadResetRunFlag>
+    <DownloadResetRunFlag>0</DownloadResetRunFlag>
+  </DownloadResetRunFlag>
+  <DownloadDisableRDP>
+    <DownloadDisableRDP>0</DownloadDisableRDP>
+  </DownloadDisableRDP>
+  <DownloadEnableRDP>
+    <DownloadEnableRDP>0</DownloadEnableRDP>
+  </DownloadEnableRDP>
+  <DownloadButtomFree>
+    <DownloadButtomFree>0</DownloadButtomFree>
+  </DownloadButtomFree>
+  <ButtomFreeWaitTime>
+    <ButtomFreeWaitTime>0</ButtomFreeWaitTime>
+  </ButtomFreeWaitTime>
+  <i128KBEraseTime>
+    <i128KBEraseTime>2000</i128KBEraseTime>
+  </i128KBEraseTime>
+  <i256KBEraseTime>
+    <i256KBEraseTime>4000</i256KBEraseTime>
+  </i256KBEraseTime>
+  <i512KBEraseTime>
+    <i512KBEraseTime>8000</i512KBEraseTime>
+  </i512KBEraseTime>
+  <i1024KBEraseTime>
+    <i1024KBEraseTime>10000</i1024KBEraseTime>
+  </i1024KBEraseTime>
+  <DownloadOptionByteFlag>
+    <DownloadOptionByteFlag>0</DownloadOptionByteFlag>
+  </DownloadOptionByteFlag>
+  <DownloadOptionByteFilePath>
+    <DownloadOptionByteFilePath>
+    </DownloadOptionByteFilePath>
+  </DownloadOptionByteFilePath>
+  <DownloadDisableSlib>
+    <DownloadDisableSlib>0</DownloadDisableSlib>
+  </DownloadDisableSlib>
+  <DownloadEnableSlib>
+    <DownloadEnableSlib>0</DownloadEnableSlib>
+  </DownloadEnableSlib>
+  <Bank3TypeList>
+    <Member Name="GD25Q127C" Value="1" Size="16MB" />
+    <Member Name="GD25Q64C" Value="1" Size="8MB" />
+    <Member Name="GD25Q32C" Value="1" Size="4MB" />
+    <Member Name="GD25Q16C" Value="1" Size="2MB" />
+    <Member Name="GD25Q80C" Value="1" Size="1MB" />
+    <Member Name="W25Q128V" Value="2" Size="16MB" />
+    <Member Name="EN25QH128A" Value="2" Size="16MB" />
+    <Member Name="Common Type1" Value="1" Size="16MB" />
+    <Member Name="Common Type2" Value="2" Size="16MB" />
+  </Bank3TypeList>
+</Configuration>
